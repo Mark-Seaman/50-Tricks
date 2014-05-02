@@ -1,10 +1,10 @@
 Remove automatically saved files from this directory tree
 Git orig files
 Git libpeerconnection files
-/home/seaman/Projects/jack-hammer/profile
-/home/seaman/Projects/jack-hammer/README.md
+/home/seaman/Projects/impact/profile
+/home/seaman/Projects/impact/README.md
 
-/home/seaman/Projects/jack-hammer:
+/home/seaman/Projects/impact:
 bin
 doc
 env
@@ -13,7 +13,7 @@ profile
 README.md
 test
 
-/home/seaman/Projects/jack-hammer/bin:
+/home/seaman/Projects/impact/bin:
 cache
 commit
 create
@@ -61,28 +61,24 @@ var-read
 var-save
 var-set
 var-write
+welcome
 
-/home/seaman/Projects/jack-hammer/doc:
-AutomatedTests
+/home/seaman/Projects/impact/doc:
 Domains
-Index
-ProjectContext
-ProjectSetup
 Public
 test
-ToDo
 vars-data
 
-/home/seaman/Projects/jack-hammer/env:
+/home/seaman/Projects/impact/env:
 bin
 include
 lib
 local
 
-/home/seaman/Projects/jack-hammer/logs:
+/home/seaman/Projects/impact/logs:
 user
 
-/home/seaman/Projects/jack-hammer/test:
+/home/seaman/Projects/impact/test:
 content.correct
 content.tst
 docs.correct

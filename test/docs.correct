@@ -1,14 +1,9 @@
 .
-./AutomatedTests
 ./Domains
-./Index
-./ProjectContext
-./ProjectSetup
 ./Public
 ./Public/test
 ./Public/TestIndex
 ./test
 ./test/TestIndex
 ./test/TestPrivateDoc1
-./ToDo
 ./vars-data

@@ -9,6 +9,7 @@ paths = '''/home/wmexpress/
 webapps/django/support/user_doc/
 Projects/thumper/
 Projects/pipescan/
+Projects/impact/
 Projects/mybook/
 '''
 
