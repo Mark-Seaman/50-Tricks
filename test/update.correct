@@ -1,5 +1,2 @@
-diff bin/filter-path /home/seaman/Documents/bin/filter-path
-diff bin/project /home/seaman/Documents/bin/project
-diff bin/src /home/seaman/Documents/bin/src
-diff bin/todo /home/seaman/Documents/bin/todo
-diff test/content.tst /home/seaman/Documents/test/content.tst
+diff bin/project /home/seaman/Projects/jack-hammer/bin/project
+diff test/update.tst /home/seaman/Projects/jack-hammer/test/update.tst
