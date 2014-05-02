@@ -66,6 +66,7 @@ bin/var-read
 bin/var-save
 bin/var-set
 bin/var-write
+bin/welcome
 test/content.tst
 test/docs.tst
 test/files.tst
