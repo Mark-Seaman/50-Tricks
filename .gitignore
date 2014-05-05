@@ -55,3 +55,7 @@ docs/_build/
 *.out
 *.diff
 *.like
+
+
+# Django Rest Framework
+django-rest-framework

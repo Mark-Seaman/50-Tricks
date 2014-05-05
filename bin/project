@@ -2,7 +2,7 @@
 # Start working on the simple project
 
 # Vars
-export p=~/Projects/impact
+export p=~/Projects/tricks
 export ph=seaman@markseaman.org
 export pa=$p/app
 export pb=$p/bin
@@ -34,7 +34,7 @@ $pt:\
 
 # Directory
 cd $p
-#figlet Impact Group > $p/bin/welcome
+figlet 50-Tricks > $p/bin/welcome
 cat $p/bin/welcome
 
 # Use virtualenv
