@@ -1,4 +1,4 @@
-Impact
-======
+50-Tricks
+=========
 
-Impact Group Social Recognition System
+You need 50 tricks to build your next web site.
