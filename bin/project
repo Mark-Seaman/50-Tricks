@@ -19,6 +19,8 @@ alias eapp="e $pa"
 alias ebin="e $pb"
 alias edoc="e $pd"
 alias etest="e $pt"
+
+alias exec='./manage.py runserver'
 alias tres='tresults'
 alias s='search'
 

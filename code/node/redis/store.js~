@@ -1,0 +1,55 @@
+//Use Redis to set up a store for key-value pairs
+var redis = require("redis"),
+    store = redis.createClient()
+
+
+// Save the item for later
+var save = function (key,value,action){
+    store.set(key,value);
+    if (action) { action(key,value); }
+}
+
+
+// Recall a previously stored item
+var recall = function(key,  action){
+    store.get(key, function (err, value) { 
+        if (err) {
+            console.log("Get error: " + err);
+        } else {
+            if (action) { action(key,value); }
+        }
+    });
+}
+
+
+var done = function (x,y) {
+    console.log("About to end");
+    store.end();
+}
+
+//-----------------------------------------------------------------------------
+// Exports
+
+exports.save   = save;
+exports.recall = recall;
+exports.done   = done;
+
+
+save('name','Ishmael', function(key,value) {
+    console.log('set name = '+value);
+
+    recall('name', function(key,value) {
+        console.log('get name = '+value);
+
+        save('name','Bob', function(key,value) {
+            console.log('set name = '+value);
+
+            recall('name', function(key,value) {
+                console.log('get name = '+value);
+                done();
+            });
+
+        });
+
+    });
+});
