@@ -1,0 +1,28 @@
+extends layout
+
+block title
+  title  #{doc}
+
+block content
+  h1 Commander
+
+  #links
+    p 
+      a(href='/') List 
+      t= ' * '
+      a(href='/#{doc}/edit') Edit
+      t= ' * '
+      a(href='/#{doc}/exec') Execute
+      t= ' * '
+      a(href='/new') Add
+    hr
+
+  #title
+    div(style='margin:3em') 
+      p
+        doc= doc
+
+  #results
+    div(style='margin:3em;border:solid 1px') 
+      blockquote
+        results!= text

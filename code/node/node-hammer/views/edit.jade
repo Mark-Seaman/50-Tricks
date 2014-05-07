@@ -1,0 +1,17 @@
+extends layout
+
+block title
+  title Edit #{doc}
+
+block content
+  h1 Edit: #{doc}
+
+  form(method="post", action="/#{doc}/edit")
+    p Doc:
+      input(name='doc', type='text', value='#{doc}') 
+    p
+      style textarea{height:400px; width:90%}
+      textarea(name='text',type='text',rows="4",cols="50") #{text}
+    p
+      button(type="submit", value="Save") Save
+      button(type="cancel", value="Cancel",  name="cancel") Cancel
