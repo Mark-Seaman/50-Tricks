@@ -1,0 +1,8 @@
+#!/bin/bash
+# Start the node-hammer application
+
+killall node
+
+rbg node app.js
+
+wf localhost:$port
