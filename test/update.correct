@@ -1,2 +1,3 @@
 diff bin/project /home/seaman/Projects/jack-hammer/bin/project
+diff bin/welcome /home/seaman/Projects/jack-hammer/bin/welcome
 diff test/update.tst /home/seaman/Projects/jack-hammer/test/update.tst

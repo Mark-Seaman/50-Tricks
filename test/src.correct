@@ -12,6 +12,7 @@ bin/doc-show
 bin/e
 bin/elapsed
 bin/filter-path
+bin/install.pip
 bin/lc
 bin/mkexe
 bin/page
@@ -22,6 +23,7 @@ bin/page-log
 bin/page-put
 bin/page-redirect
 bin/page-show
+bin/pi
 bin/project
 bin/range
 bin/rbg

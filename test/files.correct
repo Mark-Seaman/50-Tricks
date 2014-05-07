@@ -1,11 +1,13 @@
 Remove automatically saved files from this directory tree
 Git orig files
 Git libpeerconnection files
-/home/seaman/Projects/impact/profile
-/home/seaman/Projects/impact/README.md
+/home/seaman/Projects/tricks/profile
+/home/seaman/Projects/tricks/README.md
 
-/home/seaman/Projects/impact:
+/home/seaman/Projects/tricks:
 bin
+code
+django-rest-framework
 doc
 env
 logs
@@ -13,7 +15,7 @@ profile
 README.md
 test
 
-/home/seaman/Projects/impact/bin:
+/home/seaman/Projects/tricks/bin:
 cache
 commit
 create
@@ -27,6 +29,7 @@ doc-show
 e
 elapsed
 filter-path
+install.pip
 lc
 mkexe
 page
@@ -36,6 +39,7 @@ page-log
 page-put
 page-redirect
 page-show
+pi
 project
 range
 rbg
@@ -63,22 +67,44 @@ var-set
 var-write
 welcome
 
-/home/seaman/Projects/impact/doc:
+/home/seaman/Projects/tricks/code:
+angular
+django
+node
+python
+shell
+test
+
+/home/seaman/Projects/tricks/django-rest-framework:
+CONTRIBUTING.md
+docs
+MANIFEST.in
+mkdocs.py
+optionals.txt
+README.md
+requirements.txt
+rest_framework
+setup.cfg
+setup.py
+tox.ini
+
+/home/seaman/Projects/tricks/doc:
 Domains
+MyBook
 Public
 test
 vars-data
 
-/home/seaman/Projects/impact/env:
+/home/seaman/Projects/tricks/env:
 bin
 include
 lib
 local
 
-/home/seaman/Projects/impact/logs:
+/home/seaman/Projects/tricks/logs:
 user
 
-/home/seaman/Projects/impact/test:
+/home/seaman/Projects/tricks/test:
 content.correct
 content.tst
 docs.correct
