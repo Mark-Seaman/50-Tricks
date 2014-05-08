@@ -7,7 +7,6 @@ Git libpeerconnection files
 /home/seaman/Projects/tricks:
 bin
 code
-django-rest-framework
 doc
 env
 logs
@@ -75,19 +74,6 @@ python
 shell
 test
 
-/home/seaman/Projects/tricks/django-rest-framework:
-CONTRIBUTING.md
-docs
-MANIFEST.in
-mkdocs.py
-optionals.txt
-README.md
-requirements.txt
-rest_framework
-setup.cfg
-setup.py
-tox.ini
-
 /home/seaman/Projects/tricks/doc:
 Domains
 MyBook
@@ -100,6 +86,7 @@ bin
 include
 lib
 local
+man
 
 /home/seaman/Projects/tricks/logs:
 user
