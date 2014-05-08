@@ -1,0 +1,11 @@
+#!/bin/bash
+# Show the running chrunch jobs
+
+echo "Crunch processes"
+ps -ef|grep crunch
+
+echo "Output files"
+ls -l output/*
+
+echo "Crunch log"
+cat /tmp/crunch.log

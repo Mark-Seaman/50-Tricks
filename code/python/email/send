@@ -1,0 +1,31 @@
+#!/usr/bin/python
+# Send an email message using the STMP server at seaman@comsystem.us
+
+import smtplib
+from email.mime.text import MIMEText
+from sys import stdin,argv
+
+def send_email(to_addrs, subject, text):
+    from_addr = 'mark@seamanfamily.org' # 'seaman@comsystem.us'
+    msg = MIMEText(text)
+    msg['Subject'] = subject
+    msg['From'] = from_addr
+    msg['To'] = to_addrs[0]
+    
+    s = smtplib.SMTP('smtp.webfaction.com')
+    s.login('seaman','mds959WF')
+    s.sendmail(from_addr, to_addrs, msg.as_string())
+    s.quit()
+
+# Set the "To" addresses
+to_addrs = ['mark.b.seaman@gmail.com']
+if (len(argv) > 1):
+   to_addrs = argv[1].split(',')
+
+# Set the "Subject" addresses
+subject = 'Message from Mark Seaman'
+if (len(argv) > 2):
+   subject = argv[2]
+
+# Send the message
+send_email(to_addrs, subject, stdin.read())

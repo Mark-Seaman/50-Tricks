@@ -1,0 +1,46 @@
+transistion: state_clear + set --> state_set_prob
+state_clear
+Key: state_clear/set
+[Key]: (<function set_timer at 0x2322758>, 'state_set_prob')
+Action: set_timer
+state:  state_set_prob 
+transistion: state_set_prob + clear --> state_clear
+state_set_prob
+Key: state_set_prob/clear
+[Key]: (<function none at 0x23227d0>, 'state_clear')
+Action: none
+state:  state_clear    
+transistion: state_clear + timeout --> state_clear
+state_clear
+Key: state_clear/timeout
+state:  state_clear    
+transistion: state_clear + set --> state_set_prob
+state_clear
+Key: state_clear/set
+[Key]: (<function set_timer at 0x2322758>, 'state_set_prob')
+Action: set_timer
+state:  state_set_prob 
+transistion: state_set_prob + timeout --> state_set
+state_set_prob
+Key: state_set_prob/timeout
+[Key]: (<function send_set at 0x2322848>, 'state_set')
+Action: send_set
+state:  state_set      
+transistion: state_set + clear --> state_clear_prob
+state_set
+Key: state_set/clear
+[Key]: (<function set_timer at 0x2322758>, 'state_clear_prob')
+Action: set_timer
+state:  state_clear_prob
+transistion: state_clear_prob + timeout --> state_clear
+state_clear_prob
+Key: state_clear_prob/timeout
+[Key]: (<function send_clear at 0x23228c0>, 'state_clear')
+Action: send_clear
+state:  state_clear    
+transistion: state_clear + set --> state_set_prob
+state_clear
+Key: state_clear/set
+[Key]: (<function set_timer at 0x2322758>, 'state_set_prob')
+Action: set_timer
+state:  state_set_prob 

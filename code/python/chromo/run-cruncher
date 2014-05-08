@@ -1,0 +1,13 @@
+#!/bin/bash
+# Start the cruncher task if it is not running
+echo Start the cruncher task if it is not running
+
+# Only run one watcher
+ps=`ps -ef|grep crunch-start|wc -l`
+[[ $ps -gt 2 ]] && echo "Already running" && exit
+
+# Run the crunch and exit when complete
+echo "Starting a new crunch job at" `date`
+crunch-schedule 
+nohup crunch-start &> /tmp/crunch.log &
+

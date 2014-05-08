@@ -1,0 +1,6 @@
+#!/bin/bash
+# Execute python code directly in a shell script
+
+# Example usage: echo 'print "2+2=",2+2' | pex
+
+python

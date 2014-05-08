@@ -1,0 +1,42 @@
+#!/bin/bash
+# Create a schedule for chromo chrunching
+
+# Create the directories that are needed
+mkdir -p todo output done
+
+# Avoid retyping the setup details for creating each task
+function setup-task
+{
+    doit="python ../crunch-chromo.py $1 > ../output/$1"
+    moveit="mv do-$1 ../done"
+    echo "$doit;$moveit" >  todo/do-$1   
+}
+
+# Create each chromosome crunch task
+setup-task 01
+setup-task 02
+setup-task 03
+setup-task 04
+setup-task 05
+setup-task 06
+setup-task 06
+setup-task 07
+setup-task 08
+setup-task 09
+setup-task 10
+setup-task 11
+setup-task 12
+setup-task 13
+setup-task 14
+setup-task 15
+setup-task 16
+
+# Make them executable
+chmod +x todo/*
+
+# Schedule is ready
+ls -l todo
+
+echo;echo
+echo "Start the schedule with:  crunch-start"
+

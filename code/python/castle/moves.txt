@@ -1,0 +1,4 @@
+create "ghost town"
+create "ship yard"
+create "cemetary"
+list

@@ -1,0 +1,1 @@
+python ../crunch-chromo.py 10 > ../output/10;mv do-10 ../done

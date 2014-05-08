@@ -1,0 +1,74 @@
+#!/usr/bin/env python
+# Save records every time a file is given on the input
+
+from sys import stdin
+from os  import environ
+from threading  import Timer
+
+#-----------------------------------------------------------------------------
+# Save a chunk of data
+
+# Read 1000 lines to a file
+def read_data(filename):
+    #print 'Read %s' % (filename)
+    return open(filename).read()
+
+# Write 1000 lines to a file
+def write_data(filename, data):
+    #print 'Write %s' % (filename)
+    f = open(filename, 'a')
+    f.write(data)
+    f.close()
+
+# Copy 1000 lines from one file to another
+def copy_data(infile, outfile):
+    #print 'Copy %s %s' % (infile,outfile)
+    write_data(outfile, read_data(infile))
+
+# Save the next chunk of data
+def save_data():
+    global infile,x
+    infile  = chunkdir % x
+    copy_data(infile,outfile)
+    x += 1
+
+#-----------------------------------------------------------------------------
+# Timed events
+
+# Create a timed event
+def schedule(event):
+    return Timer(1, event).start()
+
+# Recurring event
+def recurring():
+    if outfile!='':
+        save_data()
+        if not need_to_exit:
+            schedule (recurring)
+
+#-----------------------------------------------------------------------------
+# Top level application
+
+need_to_exit = False
+x=0
+chunkdir = environ['p']+'/pipedata/test/scan-data/%03d'
+infile  = ''
+outfile = ''
+
+while True:
+
+    # Get the next filename to write
+    f = stdin.readline()
+    if not f: break
+
+    # Blank line causes the file to be closed
+    if f=='\n':
+        print 'stop(%s)'% (outfile)
+        outfile = ''
+    else:
+        # Append 1000 lines to this active file
+        outfile = f[:-1]
+        recurring()
+
+need_to_exit = True
+print 'All done'

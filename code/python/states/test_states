@@ -1,0 +1,9 @@
+#!/bin/bash
+# Test the state machine code
+
+#pstates.py > actual
+#house.py > actual
+house.py
+
+#diff actual correct
+#mv actual correct

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+castle.py << EOF
+go
+go
+EOF

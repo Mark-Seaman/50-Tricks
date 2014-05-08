@@ -1,0 +1,121 @@
+#!/usr/bin/env python
+# Control the recording of the scanned data
+
+from datetime   import datetime
+from os         import environ
+from os.path    import join
+from subprocess import Popen,PIPE
+from sys        import stdin
+from threading  import Timer
+from time       import sleep
+
+#-----------------------------------------------------------------------------
+# Scan recorder interface
+
+def record_begin():
+    global process
+    process = Popen (socket_reader, stdin=PIPE)
+
+def record_end():
+    process.stdin.close()
+    sleep(1)
+    process.terminate()
+
+# Name of the new socket file
+def next_scan_file():
+    format_str = "%Y-%m-%d_%H%M%S"
+    timestamp  = datetime.strftime(datetime.now(), format_str)
+    return join(environ['p'], 'pipedata', 'scan', timestamp)
+
+# Send the file to the 'scan-record' process
+def send_filename(filename):
+    process.stdin.write(filename+'\n')
+
+# Setup data saving for the scan file
+def scan_start():
+    global filename
+    filename = next_scan_file()
+    #print 'start recording', filename
+    send_filename(filename)
+    schedule (recurring)
+
+# Save 1000 new records
+def scan_save_chunk():
+    if socket_reader!='scan-socket':
+        #print 'scan-record', filename
+        send_filename(filename)
+
+# Stop saving data to this file
+def scan_stop():
+    global filename
+    #print 'stop recording', filename
+    filename = ''
+    send_filename(filename)
+ 
+#-----------------------------------------------------------------------------
+# Timed events
+
+# Create a timed event
+def schedule(event):
+    return Timer(1, event).start()
+
+
+# Recurring event
+def recurring():
+    print 'recurring()'
+    if not filename=='':
+        do_command('save')
+        if not need_to_exit:
+            schedule (recurring)
+
+#-----------------------------------------------------------------------------
+# Top level application
+
+# Commands for control
+def do_command(cmd):
+    global  need_to_exit,filename
+    if cmd=='exit':
+        do_command('stop')
+        print 'exit from scan-control'
+        need_to_exit = True
+        return 
+    if cmd=='start':
+        scan_start()
+        return
+    if cmd=='stop':
+        scan_stop()
+        return
+    if cmd=='save':
+        scan_save_chunk()
+        return
+    print 'Bad Command', cmd
+
+
+# Main command loop
+def command_loop():
+    while True:
+        cmd = stdin.readline()[:-1]
+        if not cmd:
+            break
+        do_command(cmd)
+        if need_to_exit:
+            break
+
+#-----------------------------------------------------------------------------
+# Top level application
+
+# Variables
+#socket_reader = 'scan-socket'
+socket_reader = 'scan-record'
+need_to_exit = False
+filename = ''
+process = None
+
+
+record_begin()
+command_loop()
+record_end()
+
+
+
+

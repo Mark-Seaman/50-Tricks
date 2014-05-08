@@ -1,0 +1,15 @@
+transistion: clear + set --> set_probation
+Action: set_timer
+transistion: set_probation + clear --> clear
+Action: none
+transistion: clear + timeout --> clear
+transistion: clear + set --> set_probation
+Action: set_timer
+transistion: set_probation + timeout --> set
+Action: send_set
+transistion: set + clear --> clear_probation
+Action: set_timer
+transistion: clear_probation + timeout --> clear
+Action: send_clear
+transistion: clear + set --> set_probation
+Action: set_timer

@@ -1,0 +1,18 @@
+#!/bin/bash
+# Create a schedule for chromo chrunching
+
+# Go to the execution directory
+cd todo
+
+# Do all the files
+for f in *
+do
+    echo "Doing task... $f"
+    $f
+done
+
+echo "All done"
+
+ls -l ../output/*
+
+

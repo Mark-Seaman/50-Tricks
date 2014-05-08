@@ -1,0 +1,8 @@
+#!/usr/bin/python
+# Print execute the input as a shell command script
+
+# Example usage:  echo hostname|psh
+
+from sys import stdin
+from os  import system
+system (stdin.read())
