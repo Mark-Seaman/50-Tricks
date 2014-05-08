@@ -1,0 +1,38 @@
+* Test Tricks *                                       -*-muse-*-
+
+Understanding a new technology involves learning new tricks
+
+The Jack Hammer test framework is a very simple set of shell scripts.  It lets you easily
+set, manage, build, and monitor system tests for your project.  These scripts will
+drastically accelerate your project.
+
+
+**Run**
+
+    [[tenv]]        Set up the context for all test scripts (usage: . tenv)
+    [[tst]]         Run all of the system tests
+    [[trun]]        Run the test and compare the results to the correct answer
+    [[tresults]]    Show all of the failure results
+
+
+**Output**
+
+    [[tout]]        Show the output from the last run        
+    [[tcorrect]]    Show the correct answer from the output
+    [[tdiff]]       Show the difference between actual and correct test output
+    [[tlike]]       Accept the current test results
+    [[tmklike]]     Create a script to approve a test from a web page
+
+
+**List**
+
+    [[tlist]]       List all tests
+    [[tfail]]       List the failing tests
+    
+
+**Source**
+
+    [[tshow]]       Show the source code for the test
+    [[te]]          Edit the source code
+    [[tnew]]        Create a new test
+

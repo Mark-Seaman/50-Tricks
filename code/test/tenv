@@ -1,0 +1,21 @@
+#!/bin/bash
+# Default context for test scripts (modify this for your project settings)
+
+echo 'Vars'
+export p=`pwd`
+export pb=$p/bin
+export pt=$p/test
+
+echo 'Path'
+export PATH=\
+$pb:\
+$pt:\
+/usr/bin:\
+/sbin:\
+/bin:\
+~/bin:\
+.
+
+echo 'Directory'
+pwd
+ls -l
