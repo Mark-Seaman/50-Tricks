@@ -1,0 +1,39 @@
+!!! 5
+html(lang='en')  
+  head  
+    title Shrinking World Solutions
+
+    block scripts
+
+      script(type='text/javascript')
+        function toggle(id) {
+          var c = document.getElementById(id);
+          if (c.style.display != "block") { c.style.display = "block"; }
+                                     else { c.style.display = "none"; }
+        }
+
+      style(type="text/css")
+        .collapse { display:none; }
+
+block content
+  h1 Shrinking World Solutions
+  p Display of text that is automatically set
+
+  div(style='border:solid green',class="collapse")#content
+
+    p Panel for optional display
+
+    ul(id="ulist")
+
+      li(onmouseOver="toggle('a')",onmouseOut="toggle('a')") Heading A
+        div(id="a",class="collapse") description A
+
+      li(onmouseOver="toggle('b')",onmouseOut="toggle('b')") Heading B
+        div(id="b",class="collapse") description B
+
+      li(onmouseOver="toggle('c')",onmouseOut="toggle('c')") Heading C
+        div(id="c",class="collapse") description C
+
+  button(onclick="toggle('content')") toggle panel
+
+

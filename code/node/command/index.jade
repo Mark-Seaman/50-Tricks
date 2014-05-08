@@ -1,0 +1,21 @@
+!!! 5
+html(lang='en')  
+body
+  h1 Command Executor
+
+  form(method="post", action="/")
+      input(name='command',  type='text') 
+      input(type='submit', value='Execute') 
+
+  #command
+     div
+        p   Command:
+        blockquote
+            b 
+              command= command
+  #results
+     div
+        p   Results:
+        blockquote
+            pre
+                results= results

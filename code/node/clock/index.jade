@@ -1,0 +1,41 @@
+!!! 5
+html(lang='en')  
+  head  
+    title Shrinking World Solutions
+
+    block scripts
+      script(type='text/javascript')
+
+        var count = 30;
+
+        var submitChat = function(form) {
+          document.getElementById('chat').innerHTML += '<p><b>Message : </b>'+form.chat.value+'</p>';
+          return false;
+        };
+
+        var onCount = function() {
+          if (count>0) {
+             count--;
+             document.getElementById('clock').innerHTML = '<p><b>Count: </b>' + (count) + '</p>';
+          }
+          else
+          {
+             document.getElementById('clock').innerHTML = '<p><b>Time is up</b></p>';
+          }         
+        };
+
+block content
+  h1 Shrinking World Solutions
+  p Ready to chat
+
+  div#clock
+  div#chat
+
+  form(onsubmit='return submitChat(this);')
+    input#chat(name='chat', type='text')
+    input(type='submit', value='Send Chat')
+ 
+  script(type='text/javascript')
+    setInterval(function() { onCount(); }, 1000);
+
+  

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# Write a file
+node write.js
+
+# Read it back in
+node read.js my_file.txt 
+  
+# Execute a script
+command.js
+exec-sync.js
+
+# Execute as a shell script
+ls.sh

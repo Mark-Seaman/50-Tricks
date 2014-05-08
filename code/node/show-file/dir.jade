@@ -1,0 +1,11 @@
+!!! 5
+html(lang='en')  
+body
+  h1= 'Directory:' + path
+
+  div
+    ul
+      for file in files
+        li
+          a(href='data/#{file}') #{file}
+        

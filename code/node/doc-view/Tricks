@@ -1,0 +1,101 @@
+* Web Development *                 -*- muse -*-
+
+**50 Tricks for Web Development**
+
+**[[/home/seaman/Documents/Code/hammer/tutorial/server][server]]**
+host a web app
+server start/stop
+program files
+create new app
+url routing
+
+**[[/home/seaman/Documents/Code/hammer/tutorial/database][database]]**
+create new database
+define new data model
+insert new record
+save data record
+query matching records
+walk through a list of records
+delete record
+
+**[[/home/seaman/Documents/Code/hammer/tutorial/views][views]]**
+home view
+list view
+details view
+edit view
+new record view
+delete view
+
+**[[/home/seaman/Documents/Code/hammer/tutorial/formatting][formatting]]**
+standard fonts and colors
+headings
+bold
+bullets
+italic
+
+**[[/home/seaman/Documents/Code/hammer/tutorial/pages][pages]]**
+basic page layout
+page navigation
+banner
+page footer
+embedded image
+hyperlinks
+buttons
+
+**[[/home/seaman/Documents/Code/hammer/tutorial/scripting][scripting]]**
+programable content from server
+business rules in server code
+actions in web client pages
+animations in web pages
+enter form data
+
+**[[/home/seaman/Documents/Code/hammer/tutorial/users][users]]**
+user login
+user registration
+user password reset
+user authorization and permissions
+
+**[[/home/seaman/Documents/Code/hammer/tutorial/download][download]]**
+search text
+file upload
+image upload
+stream video
+convert text to html
+
+**[[/home/seaman/Documents/Code/hammer/tutorial/files][files]]**
+read file
+write file
+data export
+data import
+execute system commands
+
+**[[/home/seaman/Documents/Code/hammer/tutorial/computers][computers]]**
+automatic actions on clock
+send email
+remote file copy
+remote command execution
+invoke web service
+
+
+This project focuses on the tools and processes for quickly turning on
+production quality web sites.  
+
+Key technologies include:
+ *  Django
+ *  Python
+ *  MySQL
+ *  Linux 
+ *  Web Faction hosting
+ *  Emacs
+
+Technical capabilities:
+ *  Web site 
+ *  Standard navigation
+ *  CSS
+ *  Forms process
+ *  Database updates
+
+
+See also [[Brain]], WebDevelopmentPlatform
+
+

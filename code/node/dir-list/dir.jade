@@ -1,0 +1,10 @@
+!!! 5
+html(lang='en')  
+
+body
+    h1 List of files
+    - for (var id in files)
+      - var f = files[id]
+        div
+          a(href='/#{f}') #{f}
+        

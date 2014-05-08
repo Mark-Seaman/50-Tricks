@@ -1,0 +1,18 @@
+#!/bin/bash
+# Run mongo DB
+
+cd $code/hammer/tricks/4thot
+
+# Kill the old process
+killall node
+
+# Command line test
+#node test-app.js
+
+# Start the server
+rbg node app.js
+sleep 1
+
+# Show the web page
+w localhost:8084/
+

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+mongo <<EOF
+use test
+db.notes.find ({}, {text:1, title:1, _id:0});
+EOF

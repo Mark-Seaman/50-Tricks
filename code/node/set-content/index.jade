@@ -1,0 +1,23 @@
+!!! 5
+html(lang='en')  
+  head  
+    title Shrinking World Solutions
+
+    block scripts
+      script(type='text/javascript')
+        var submitChat = function(form) {
+          document.getElementById('content').innerHTML += 
+            '<p><b>Message received: </b>' + form.chat.value + '</p>';
+          return false;
+        };
+
+block content
+  h1 Shrinking World Solutions
+  p Content is inserted from a template
+
+  div#content
+  
+  form(onsubmit='return submitChat(this);')
+    input#chat(name='chat', type='text')
+    input(type='submit', value='Send Chat')
+ 

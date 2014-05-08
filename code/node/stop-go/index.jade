@@ -1,0 +1,23 @@
+!!! 5
+html(lang='en')  
+  head  
+    title Shrinking World Solutions
+
+    block scripts
+      script(type='text/javascript')
+        var setText = function(text,color) {
+          c = document.getElementById('textArea')
+          c.innerHTML = '<p>'+text+'</p>';
+          c.style.border='solid '+color
+          return false;
+        };
+
+block content
+  h1 Shrinking World Solutions
+  p Display of text that is automatically set
+
+  div(style='border:solid green',id='x')#textArea
+    p stopped
+
+  button(onclick="setText('stopped','red')") stop
+  button(onclick="setText('go','green')")   start

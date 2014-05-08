@@ -1,0 +1,36 @@
+#!/bin/bash
+# Run mongo DB
+
+mongo <<EOF
+
+// Switch to a new database
+use newdb
+
+// Insert a single record
+note1 = { title: 'This is my first note', author: 'Mark Seaman', text: 'Just beginning to learn MongoDB'};
+db.notes.insert(note1);
+
+// Update a record that is missing
+note2 = { title: 'This is my second note', author: 'Mark Seaman', text: 'Just beginning to learn MongoDB'};
+db.notes.update({title: 'xxx'}, note2, true, false);
+
+// Update a record that is already present
+note3 = { title: 'This is my third note', author: 'Mark Seaman', text: 'Replacement test'}
+db.notes.update(note1, note3, true, false);
+
+// Save the record as a new one
+db.notes.save ({ title: 'This is my fourth note', author: 'Mark Seaman', text: 'Learning MongoDB'});
+
+// Modify a record
+db.notes.findAndModify ( {text:'Learning MongoDB'}, { $set: { author: "Stacie Seaman" } }, true, false);
+
+// List the one record
+db.notes.find({ author: 'Mark Seaman' });
+
+// Remove all articles written by Mark Seaman
+db.notes.remove({author:'Mark Seaman'});
+
+// There should not be any articles left
+db.notes.find();
+
+EOF

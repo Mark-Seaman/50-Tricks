@@ -1,0 +1,11 @@
+#!/bin/bash
+# Run the pipe scan app
+
+# Kill the old processes
+killall node
+
+# Run the server as a background task
+rbg node app.js
+
+# Show the first page in the browser
+w localhost:8080

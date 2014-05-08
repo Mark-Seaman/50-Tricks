@@ -1,0 +1,12 @@
+!!! 5
+html(lang='en')  
+head
+    title  Demo app for table
+body
+    h1 Demo app for table
+    #contents
+        -for (var id in items)
+            - var item = items[id]
+                  div
+                        a(href='/item/#{id}') #{item.name} is #{item.price}
+        

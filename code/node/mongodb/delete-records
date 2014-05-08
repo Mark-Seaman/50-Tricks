@@ -1,0 +1,14 @@
+#!/bin/bash
+# Run mongo DB
+
+mongo <<EOF
+
+use test
+db.notes.remove({title: /^This is my/ });
+
+// There should not be any articles left
+db.notes.find();
+
+db.notes.remove();
+
+EOF

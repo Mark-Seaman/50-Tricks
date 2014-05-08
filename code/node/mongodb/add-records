@@ -1,0 +1,21 @@
+#!/bin/bash
+
+mongo <<EOF
+// Run mongo DB
+
+// Switch to a test database
+use test
+
+// Insert a single record
+db.notes.insert({ title: 'This is my first note', author: 'Mark Seaman', 
+                  text: 'Just beginning to learn MongoDB'});
+db.notes.insert({ title: 'This is my second note', author: 'Mark Seaman', 
+                  text: 'no comment'});
+db.notes.insert({ title: 'This is my third note', author: 'Mark Seaman', 
+                  text: 'enough learning'});
+db.notes.insert({ title: 'This is my fourth note', author: 'Mark Seaman', 
+                  text: 'Still learning MongoDB'});
+
+db.notes.find({}, {title:1,_id:0});
+
+EOF

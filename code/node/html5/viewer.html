@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pipe Scan Viewer</title>
+
+    <style>
+      body {
+         background: #efefef;
+      }
+      
+      #canvas {
+         background: #ffffff;
+         -webkit-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+         -moz-box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+         box-shadow: 4px 4px 8px rgba(0,0,0,0.5);
+      }
+
+      .floatingControls {
+         position: absolute;
+         left: 475px;
+         top: 20px;
+      }
+
+      #canvas {
+         margin: 10px;
+      }
+    </style>
+  </head>
+
+   <body>
+     <canvas id='canvas' width='1500' height='900'>Canvas not supported</canvas>
+     <script src = 'data.js'></script>
+     <script src = 'viewer.js'></script>
+  </body>
+</html>

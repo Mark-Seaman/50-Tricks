@@ -1,0 +1,18 @@
+#!/bin/bash
+
+mongo <<EOF
+use test
+
+// Insert a single record
+db.notes.insert ({ title: "This is my first note", text:'Just beginning to learn MongoDB'});
+
+// Replace it (allow insert, no multiple)
+db.notes.update({title: "This is my first note" },{$set: {'title': "second note"}}, false, true);
+
+// Insert this record (allow insert, no multiple)
+db.notes.update({ title: 'xxxx'}, { $set: { 'title': 'This is my third note', text:'none'}}, true, false);
+
+// There should be two
+db.notes.find({}, {title:1,_id:0});
+it
+EOF

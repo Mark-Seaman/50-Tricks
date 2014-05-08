@@ -1,0 +1,25 @@
+extends layout
+
+block title
+  title Detail - #{id}
+
+block content
+
+  h1 
+    a(style='color:#222',href='/#{id}/edit') #{id}
+  hr
+  -var box = "float:right; background-color:#ffe;border:solid 1px gray;  height:200px;width:40%;  margin:1em; padding:1em"
+  div(style='#{box}')
+    h2
+      a(style='color:blue', href='#{child1}') #{child1}
+  div(style='#{box}')
+    h2
+      a(style='color:purple', href='#{child2}') #{child2}
+  div(style='#{box}')
+    h2
+      a(style='color:green',href='#{child3}') #{child3}
+  div(style='#{box}')
+    h2
+      a(style='color:red',href='#{child4}') #{child4}
+
+

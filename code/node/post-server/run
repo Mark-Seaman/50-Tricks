@@ -1,0 +1,15 @@
+#!/bin/bash
+# Start the mill probe server
+
+# Kill the old process
+killall node
+
+# Start the server
+rbg node index.js
+
+# Show the run log
+echo 'Node Server Started'
+echo "Watch  $0.log for results"
+
+# Show the web page
+w localhost:8080

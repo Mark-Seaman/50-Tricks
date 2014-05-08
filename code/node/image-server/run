@@ -1,0 +1,13 @@
+#!/bin/bash
+# Start the mill probe server
+
+# Kill the old process
+killall node
+
+# Start the server
+nohup node index.js &> $0.log &
+
+echo 'Mill Probe Server Started'
+echo "Watch   $0.log for results"
+
+w localhost:8080

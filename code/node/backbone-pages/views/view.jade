@@ -1,0 +1,46 @@
+!!! 5
+html(lang="en")
+  head
+    title View Pipe Scan
+    script(data-main='js/boot', type='text/javascript',src='/js/libs/require.js')
+  body
+    h1 View Jade Template
+    p This is the select page
+    div#content
+
+    ul
+        li
+            a(href='/') home
+        li
+            a(href='view') view
+        li
+            a(href='select') select
+        li
+            a(href='record') record
+    h1 xxx
+
+   // script(type="text/template",id="tpl-xxx")
+   //     <h1><%= name %></h1>
+
+    script(type="text/javascript")
+      
+      var MyView = Backbone.View.extend({
+        el: $('#content') 
+        //template:_.template($('#tpl-xxx').html()),
+
+        initialize: function() {
+          this.render();
+        },
+
+        render: function() {
+          var templateArgs = {
+            name: "<p>Mark Seaman</p>",
+          };
+          //$(this.el).html(this.template(templateArgs));
+          //this.$el.html(indexTemplate);
+          this.$el.html("<p>Me</p>");
+        }
+      });
+      return new MyView
+      //var v = new MyView({ el: $("#content")});
+
