@@ -1,3 +1,6 @@
+#!/bin/bash
+# Build an express app from scratch
+
 npm install express
 npm install stylus
 express -s -c stylus helloworld

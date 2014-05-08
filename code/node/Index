@@ -1,0 +1,19 @@
+* Node Tricks *                                       -*-muse-*-
+
+Teaching an old dog NodeJS
+
+_____________________________________________________________________________
+
+
+[[output]]          Print output from NodeJS
+
+[[express]]         Express app showing routing
+
+[[express-app]]     Build an app from scratch
+
+[[five-view]]       Build list,detail,edit,new,delete views
+
+[[web-command]]     Web app that can execute shell commands
+
+[[command]]         Execute shell commands from NodeJS app
+

@@ -1,11 +1,9 @@
 #!/bin/bash
-# Start the node app and load the top page
+# Demonstrate how to execute shell commands from NodeJS
+  
+# Execute a script
+command.js
+action.js
 
-# Kill the old process
-killall node
-
-# Start the server
-rbg node app.js
-
-# Show the web page
-w localhost:8080
+# Execute as a shell script
+ls.sh

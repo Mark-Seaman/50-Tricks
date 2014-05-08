@@ -1,12 +1,11 @@
 #!/bin/bash
-# Start the mill probe server
+# Start the node app and load the top page
 
 # Kill the old process
 killall node
 
 # Start the server
-rbg node index.js
-sleep 1
+rbg node app.js
 
 # Show the web page
 rbg firefox localhost:8080

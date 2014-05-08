@@ -3,6 +3,7 @@
 
 var exec       = require('child_process').exec;
 
+// Function to execute any command
 var doCommand = function(command) {
     exec(command,  function(error, stdout) {
         if (error) {
