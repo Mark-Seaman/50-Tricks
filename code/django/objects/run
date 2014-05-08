@@ -1,0 +1,17 @@
+#!/bin/bash
+# Run the code to demo this project
+
+# Create the basic app shell
+django-admin.py startproject project
+find
+
+# Project directory
+cd project
+
+# Create the object app
+manage.py startapp contact
+
+# Run the server and display the page
+manage.py runserver
+sleep 2
+firefox localhost:8000

@@ -1,0 +1,9 @@
+* Django Tricks *                                       -*-muse-*-
+
+Teaching an old dog Django
+
+_____________________________________________________________________________
+
+[[new-project]]     Create a new project
+[[hello-world]]     Simplest possible web app
+[[objects]]         Object Relational Mapping (objects & database)

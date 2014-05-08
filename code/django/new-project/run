@@ -3,3 +3,7 @@
 
 django-admin.py startproject project
 find
+
+cd project
+manage.py runserver
+firefox localhost:8000
