@@ -1,0 +1,11 @@
+#!/bin/bash
+# Demonstrate how to use the Redis (key-value store)
+
+# Test basic redis with file duplication
+echo "Sample text file" > read_me.txt
+node test_redis.js
+cat *.txt
+rm *.txt
+
+# Test storage module
+node test_store.js
