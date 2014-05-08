@@ -1,0 +1,7 @@
+#!/bin/bash
+# Show the summary with cost
+
+python <<EOF
+from food import print_menu_file, print_html_summary
+print_menu_file (".food", print_html_summary)
+EOF

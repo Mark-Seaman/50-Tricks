@@ -1,0 +1,11 @@
+<div class="hero-unit">
+  <h1>Angular Workshop</h1>
+  <p>Elegant solutions to everyday problems.</p>
+  <ul>
+      <li ng-repeat="t in topics">{{t}}</li>
+      <li>
+        <input type=text ng-model='name'>
+        <button ng-click='add()'>Add</button>
+      </li>
+  </ul>
+</div>

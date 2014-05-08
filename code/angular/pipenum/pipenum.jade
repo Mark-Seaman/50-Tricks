@@ -1,0 +1,24 @@
+extends layout
+
+block title
+  title Pipe Scan Record
+
+block navigator
+
+block content
+
+  h1 Pipe Number
+
+  div(ng-controller="RecordCtrl",id='graphdiv')
+
+    script 
+      pipe = #{pipe}  
+
+    p
+      form(method="post", action="/json")
+        input(name='pipe',type='text',ng-model='pipe')
+        input(type='submit', value='Save')
+      
+
+      
+    button(ng-click="post_to_url('/json', {pipe:64}, 'post')") Update

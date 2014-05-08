@@ -1,0 +1,53 @@
+<!doctype html>
+<html ng-app>
+
+  <head>
+    <script src='angular.min.js'></script>
+  </head>
+
+  <body>
+
+    <h1>WMD command builder</h1>
+
+    <h2>System</h2>
+
+    <a href='' ng-click='cmd="report/weekly"'>Weekly Reports</a>
+
+    
+    <p>Command</p>
+    <input type='text' ng-model='cmd'>
+
+
+    <p>URL</p>
+    <b>{{host}}</b>
+    <p ng-model='host'> </p><script>host="http://wmexpress.webfactional.com/doc"</script>
+    <button ng-click='results = "Running Command..."; host="http://wmexpress.webfactional.com/doc"; url=name'>Run</button>
+
+    <h2>Mill</h2>
+
+    <p>Unit</p>
+    <input type='text' ng-model='unit'>
+    <p>Command</p>
+    <input type='text' ng-model='cmd'>
+
+    <b>http://wme/doc/{{unit}}/{{cmd}}/</b>
+    <button ng-click='results = "Running Command..."'>Run</button>
+
+
+
+    <div style='background:lightgreen'>
+      <h1>URL</h1>
+      <b>{{host}}/{{url}}</b>
+
+      <h1>Results</h1>
+      {{results}}
+    </div>
+    <script>
+       results = 'None yet';
+    </script>
+
+  </body>
+
+</html>
+
+

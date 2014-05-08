@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <!-- http://tutorialzine.com/2013/05/quick-tip-convert-backbone-to-angularjs/ -->
+
+  <head>
+    <meta charset="utf-8"/>
+    <title>Order Form</title>
+
+    <!-- Google web fonts -->
+    <link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel='stylesheet' />
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.0.5/angular.min.js"></script>
+    <script src="script.js"></script>
+
+  </head>
+
+  <body>
+ 
+    <form id="main" ng-app ng-controller="food">
+   
+      <ul id="food">
+        <li ng-repeat="i in items">
+
+          <label>
+            <input type="checkbox" ng-model="i.selected" value="1" name="{{i.title}}" />
+            {{i.title}}
+            <span>${{i.price}}</span>
+          </label>
+
+        </li>
+      </ul>
+
+      <ul id="selected">
+        <li ng-repeat="i in selected()">
+          
+          <label>{{i.title}}</label>
+
+        </li>
+      </ul>      
+
+      <p id="total">total: <span>${{total()}}</span></p>
+
+      <input type="submit" id="save" value="Save"/>
+
+    </form>
+  
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+
+    <script src='../js/angular.min.js'></script>
+    <script src='services.js' type='text/javascript'></script>
+
+  </head>
+  <body>
+
+    <div ng-app="myApp" ng-controller="SampleCtrl">
+      <markdown ng-model="someCode">
+      </markdown>   
+      <textarea ng-model="someCode" style="width:400px;height:200px;"></textarea>
+    </div>
+
+    <div ng-app="myApp">
+    ​<markdown>
+# Hello World!
+- Zeppelin
+- That guy
+- Kronos
+    </markdown>
+    </div>​​​​​​​​​​​​​​​​​
+  </body>
+</html>

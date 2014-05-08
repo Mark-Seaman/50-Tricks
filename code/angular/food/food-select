@@ -1,0 +1,7 @@
+#!/bin/bash
+# Show the summary with cost
+
+python <<EOF
+from food import print_menu_file, print_selector_data
+print_menu_file (".food", print_selector_data)
+EOF

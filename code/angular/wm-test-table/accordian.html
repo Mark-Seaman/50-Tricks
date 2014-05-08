@@ -1,0 +1,31 @@
+<!doctype html>
+<html ng-app="plunker">
+  <head>
+    <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.4.0.js"></script>
+    <script src="./accordian.js"></script>
+  </head>
+  <body style="padding:3em">
+
+    <h1>Test Table Demo</h1>
+
+    <div ng-controller="AccordionDemoCtrl">
+
+      <accordion close-others="true">
+
+        <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+
+          <pre>
+            <h2>{{group.content}}</h2>
+            <button class="btn btn-small" ng-click="addItem(group.items)">Add Item</button>
+            <div ng-repeat="item in group.items">{{item}}</div>
+          </pre>
+
+        </accordion-group>
+
+      </accordion>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!doctype html5>
+<html ng-app="ngSanitize">
+  <head>
+    <script src="http://code.angularjs.org/angular-1.0.2.min.js"></script>
+    <script src="linky.js"></script>
+  </head>
+  <body>
+    <div ng-controller="Ctrl">
+    Snippet: <textarea ng-model="snippet" cols="60" rows="3"></textarea>
+    <table>
+      <tr>
+        <td>Filter</td>
+        <td>Source</td>
+        <td>Rendered</td>
+      </tr>
+      <tr id="linky-filter">
+        <td>linky filter</td>
+        <td>
+          <pre>&lt;div ng-bind-html="snippet | linky"&gt;<br>&lt;/div&gt;</pre>
+        </td>
+        <td>
+          <div ng-bind-html="snippet | linky"></div>
+        </td>
+      </tr>
+      <tr id="escaped-html">
+        <td>no filter</td>
+        <td><pre>&lt;div ng-bind="snippet"&gt;<br>&lt;/div&gt;</pre></td>
+        <td><div ng-bind="snippet"></div></td>
+      </tr>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+#!/bin/bash
+# Show the summary with cost
+
+python <<EOF |  python -mjson.tool
+from food import print_menu_file, print_menu_json
+print_menu_file (".food", print_menu_json)
+EOF

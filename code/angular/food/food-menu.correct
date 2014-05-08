@@ -1,0 +1,1197 @@
+<div ng-controller="food_selector">
+<h1>Menu</h1>
+<a href="Index">Index</a> * <a href='Select'>Select Food</a> * <a href="Summary">Data</a><br><br>
+<tabset ng-show="true">
+
+<tab heading="Brunch"><div class="page"><ul>
+
+
+<br><b></b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Lemon-PoppySeed Waffles,6.95")'>
+  <span>
+     Lemon-PoppySeed Waffles,  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Malted Pumpkin Waffles,6.95")'>
+  <span>
+     Malted Pumpkin Waffles,  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Mini Quiches Lorraine,6.95")'>
+  <span>
+     Mini Quiches Lorraine,  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Cinnamon Streussel Buns,4.95")'>
+  <span>
+     Cinnamon Streussel Buns,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Pear Pancakes,4.95")'>
+  <span>
+     Pear Pancakes,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Mediterranean Strata,5.95")'>
+  <span>
+     Mediterranean Strata,  Price/serving: $5.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Veggie Benedict,5.95")'>
+  <span>
+     Veggie Benedict,  Price/serving: $5.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Traditional Benedict,7.95")'>
+  <span>
+     Traditional Benedict,  Price/serving: $7.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Crab Cake Benedict,8.95")'>
+  <span>
+     Crab Cake Benedict,  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Scrambled Eggs with Smoked Salmon,8.95")'>
+  <span>
+     Scrambled Eggs with Smoked Salmon,  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Sweet Fruit Scones,3.95")'>
+  <span>
+     Sweet Fruit Scones,  Price/serving: $3.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Cinnamon Scones,3.95")'>
+  <span>
+     Cinnamon Scones,  Price/serving: $3.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Cardamom French Toast,4.95")'>
+  <span>
+     Cardamom French Toast,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Sweet Potato Hash Browns,5.95")'>
+  <span>
+     Sweet Potato Hash Browns,  Price/serving: $5.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Country Potatoes with Chives,4.95")'>
+  <span>
+     Country Potatoes with Chives,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Artichoke Tart,4.95")'>
+  <span>
+     Artichoke Tart,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Carmelized Onion Tarltets,4.95")'>
+  <span>
+     Carmelized Onion Tarltets,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Pesto and Prosciutto Breakfast Strata,8.95")'>
+  <span>
+     Pesto and Prosciutto Breakfast Strata,  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Mini Vegetarian Quiche,4.95")'>
+  <span>
+     Mini Vegetarian Quiche,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Wild Mushroom Streudel,8.95")'>
+  <span>
+     Wild Mushroom Streudel,  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Spinach-Ricotta Pie,7.95")'>
+  <span>
+     Spinach-Ricotta Pie,  Price/serving: $7.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Pepper and Onion Sjortcake,7.95")'>
+  <span>
+     Pepper and Onion Sjortcake,  Price/serving: $7.95
+  </span>
+</li>
+
+</ul><br>
+
+</ul></div></tab>
+
+<tab heading="Desserts"><div class="page"><ul>
+
+
+<br><b></b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Tahitian Bananas Foster,4.95")'>
+  <span>
+     Tahitian Bananas Foster,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Mini Chocolate Cups filled with Chocolate Mousse,4.95")'>
+  <span>
+     Mini Chocolate Cups filled with Chocolate Mousse,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Lemon Tartlets,4.95")'>
+  <span>
+     Lemon Tartlets,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Fruit Tartlets,4.95")'>
+  <span>
+     Fruit Tartlets,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Mango-Tango Gelato,4.95")'>
+  <span>
+     Mango-Tango Gelato,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Chai Chocolate Custard,4.95")'>
+  <span>
+     Chai Chocolate Custard,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Cheesecake with Orange-Cointreau Glaze,5.95")'>
+  <span>
+     Cheesecake with Orange-Cointreau Glaze,  Price/serving: $5.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Balsamic-Berry Trifle,5.95")'>
+  <span>
+     Balsamic-Berry Trifle,  Price/serving: $5.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Toffee Cake with Caramel Sauce,4.95")'>
+  <span>
+     Toffee Cake with Caramel Sauce,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Fig Galette,6.95")'>
+  <span>
+     Fig Galette,  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Cranberry Tartlets,5.95")'>
+  <span>
+     Cranberry Tartlets,  Price/serving: $5.95
+  </span>
+</li>
+
+</ul><br>
+
+</ul></div></tab>
+
+<tab heading="Entrees"><div class="page"><ul>
+
+
+<br><b>Beef Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Beef Wellington,10.95")'>
+  <span>
+     Beef Wellington,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Flank Steak Roulades,8.95")'>
+  <span>
+     Flank Steak Roulades,  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Steak Chimichurri,10.95")'>
+  <span>
+     Steak Chimichurri,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Lemon Grass Beef with Rice Paper,10.95")'>
+  <span>
+     Lemon Grass Beef with Rice Paper,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Beef Sirloin with Herb Sauce,10.95")'>
+  <span>
+     Beef Sirloin with Herb Sauce,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Spicy Asian Rib Eyes with Sesame Sauce,11.95")'>
+  <span>
+     Spicy Asian Rib Eyes with Sesame Sauce,  Price/serving: $11.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Grilled Tri-Tip Roast with Cherry Tomoato Sauce,10.95")'>
+  <span>
+     Grilled Tri-Tip Roast with Cherry Tomoato Sauce,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Black Bean Beef,10.95")'>
+  <span>
+     Black Bean Beef,  Price/serving: $10.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Other Meats</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Spicy Leg of Lamb,11.95")'>
+  <span>
+     Spicy Leg of Lamb,  Price/serving: $11.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Chicken Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Chicken Roulades,10.95")'>
+  <span>
+     Chicken Roulades,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Stuffed Chicken Breasts,10.95")'>
+  <span>
+     Stuffed Chicken Breasts,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Grilled Chicken topped with Roasted Tomato Salsa,10.95")'>
+  <span>
+     Grilled Chicken topped with Roasted Tomato Salsa,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Cornish Game Hens with Tamarind Glaze,10.95")'>
+  <span>
+     Cornish Game Hens with Tamarind Glaze,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Rosemary Chicken Breasts in Herb Vinaigrette,9.95")'>
+  <span>
+     Rosemary Chicken Breasts in Herb Vinaigrette,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Mango Chili Chicken,9.95")'>
+  <span>
+     Mango Chili Chicken,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Chicken Breasts in Tarragon Cream Sauce,9.95")'>
+  <span>
+     Chicken Breasts in Tarragon Cream Sauce,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Pan Fried Chicken in Vinaigrette,9.95")'>
+  <span>
+     Pan Fried Chicken in Vinaigrette,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Coconut Chicken,10.95")'>
+  <span>
+     Coconut Chicken,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Chicken Enchiladas,11.95")'>
+  <span>
+     Chicken Enchiladas,  Price/serving: $11.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Greek Chicken,9.95")'>
+  <span>
+     Greek Chicken,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Lemon Chicken,9.95")'>
+  <span>
+     Lemon Chicken,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Beer-Can Chicken,9.95")'>
+  <span>
+     Beer-Can Chicken,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Southern Livers and onions,9.95")'>
+  <span>
+     Southern Livers and onions,  Price/serving: $9.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Pasta Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Pasta Primavera,9.95")'>
+  <span>
+     Pasta Primavera,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Four Cheese Lasagne,12.95")'>
+  <span>
+     Four Cheese Lasagne,  Price/serving: $12.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Farfalle Pesto with Sun Dried Tomatoes,12.95")'>
+  <span>
+     Farfalle Pesto with Sun Dried Tomatoes,  Price/serving: $12.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Stuffed Shells,12.95")'>
+  <span>
+     Stuffed Shells,  Price/serving: $12.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Pasta Portofine,10.95")'>
+  <span>
+     Pasta Portofine,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item(""Farfalle with Asparagus  Roasted Shallots and Bleu Cheese",10.95")'>
+  <span>
+     "Farfalle with Asparagus  Roasted Shallots and Bleu Cheese",  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item(""Fetuccini with Crab  Asparagus and Roma Tomatoes",13.95")'>
+  <span>
+     "Fetuccini with Crab  Asparagus and Roma Tomatoes",  Price/serving: $13.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Poultry Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Roasted Turkey Breast with Cranberry-Cornbread Stuffing,9.95")'>
+  <span>
+     Roasted Turkey Breast with Cranberry-Cornbread Stuffing,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Dry Rubbed Turkey Breast,10.95")'>
+  <span>
+     Dry Rubbed Turkey Breast,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Duck Confit,14.95")'>
+  <span>
+     Duck Confit,  Price/serving: $14.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Applejack Pheasant,15.95")'>
+  <span>
+     Applejack Pheasant,  Price/serving: $15.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Seafood Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Lobster Thermadore,20.95")'>
+  <span>
+     Lobster Thermadore,  Price/serving: $20.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Crab Cakes,18.95")'>
+  <span>
+     Crab Cakes,  Price/serving: $18.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Chilean Sea Bass,15.95")'>
+  <span>
+     Chilean Sea Bass,  Price/serving: $15.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Grilled Salmon with Tropical Salsa,15.95")'>
+  <span>
+     Grilled Salmon with Tropical Salsa,  Price/serving: $15.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Seared Sesame Ahi,14.95")'>
+  <span>
+     Seared Sesame Ahi,  Price/serving: $14.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Chilean Sea Bass with Pepper Coulis,14.95")'>
+  <span>
+     Chilean Sea Bass with Pepper Coulis,  Price/serving: $14.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Pan Fried Trout with Bacon Dressing,10.95")'>
+  <span>
+     Pan Fried Trout with Bacon Dressing,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Salmon with Citrus Soy Glaze,12.95")'>
+  <span>
+     Salmon with Citrus Soy Glaze,  Price/serving: $12.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Pork Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Cuban Pork Roast,12.95")'>
+  <span>
+     Cuban Pork Roast,  Price/serving: $12.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Harvest Pork Tenerloin,12.95")'>
+  <span>
+     Harvest Pork Tenerloin,  Price/serving: $12.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Pork Chops with Cranberry Chutney,12.95")'>
+  <span>
+     Pork Chops with Cranberry Chutney,  Price/serving: $12.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Smoked Baby Back Ribs,10.95")'>
+  <span>
+     Smoked Baby Back Ribs,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Pork Tenderloin stuffed with Cranberry Cornbread,10.95")'>
+  <span>
+     Pork Tenderloin stuffed with Cranberry Cornbread,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Romano-Sage Pork Chops,10.95")'>
+  <span>
+     Romano-Sage Pork Chops,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Curried Pork Tenderloin,10.95")'>
+  <span>
+     Curried Pork Tenderloin,  Price/serving: $10.95
+  </span>
+</li>
+
+</ul><br>
+
+</ul></div></tab>
+
+<tab heading="Hors D'oeuvres"><div class="page"><ul>
+
+
+<br><b>Beef Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Beef Medallions topped with carmelized shallots and wild mushrooms,5.95")'>
+  <span>
+     Beef Medallions topped with carmelized shallots and wild mushrooms,  Price/serving: $5.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Beef and Pepper Bundles,9.95")'>
+  <span>
+     Beef and Pepper Bundles,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Beef Medallions with Pomegranite Jam,9.95")'>
+  <span>
+     Beef Medallions with Pomegranite Jam,  Price/serving: $9.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Other Meats</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Figs with Prosciutto,8.95")'>
+  <span>
+     Figs with Prosciutto,  Price/serving: $8.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Chicken Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Rumaki,5.95")'>
+  <span>
+     Rumaki,  Price/serving: $5.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Mini Chicken Roulades,4.95")'>
+  <span>
+     Mini Chicken Roulades,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Smoked Chicken Quesadillas,7.95")'>
+  <span>
+     Smoked Chicken Quesadillas,  Price/serving: $7.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Ginger-Chicken Dip,6.95")'>
+  <span>
+     Ginger-Chicken Dip,  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Asian Chicken Lettuce Wraps,8.95")'>
+  <span>
+     Asian Chicken Lettuce Wraps,  Price/serving: $8.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Vegetarian Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Blue Cheese Quesadillas with Pear Salsa,7.95")'>
+  <span>
+     Blue Cheese Quesadillas with Pear Salsa,  Price/serving: $7.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item(""Goat Cheese  Marmalade and Pear Crostini",7.95")'>
+  <span>
+     "Goat Cheese  Marmalade and Pear Crostini",  Price/serving: $7.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item(""Goat Cheese  Fig and Balsamic Crostini",8.95")'>
+  <span>
+     "Goat Cheese  Fig and Balsamic Crostini",  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Spicy Black Bean Bites,6.95")'>
+  <span>
+     Spicy Black Bean Bites,  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Endive with Brandied Gorgonzola and Apple Compote,6.95")'>
+  <span>
+     Endive with Brandied Gorgonzola and Apple Compote,  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item(""Fresh Mozzarella  Dried Tomato and Pesto Crostini ",6.95")'>
+  <span>
+     "Fresh Mozzarella  Dried Tomato and Pesto Crostini ",  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Sweet Onion Souffle,6.95")'>
+  <span>
+     Sweet Onion Souffle,  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Pappadews stuffed with Goat Cheese,6.95")'>
+  <span>
+     Pappadews stuffed with Goat Cheese,  Price/serving: $6.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Vegetarian</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Four Cheese Stuffed Mushrooms,5.95")'>
+  <span>
+     Four Cheese Stuffed Mushrooms,  Price/serving: $5.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Seafood Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Shrimp Skewers ,9.95")'>
+  <span>
+     Shrimp Skewers ,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Salmon Bites,9.95")'>
+  <span>
+     Salmon Bites,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item(""Mango  Shrimp and Prosciutto Kebaba",8.95")'>
+  <span>
+     "Mango  Shrimp and Prosciutto Kebaba",  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Pistachio Shrimp,8.95")'>
+  <span>
+     Pistachio Shrimp,  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Ceviche,9.95")'>
+  <span>
+     Ceviche,  Price/serving: $9.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Pork Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Pork Medallions with Pepita Crust,8.95")'>
+  <span>
+     Pork Medallions with Pepita Crust,  Price/serving: $8.95
+  </span>
+</li>
+
+</ul><br>
+
+</ul></div></tab>
+
+<tab heading="Salads"><div class="page"><ul>
+
+
+<br><b>Prepared Salads</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Greek Orzo Salad,6.95")'>
+  <span>
+     Greek Orzo Salad,  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("3 Bean Salad with Tomato Vinaigrette,8.95")'>
+  <span>
+     3 Bean Salad with Tomato Vinaigrette,  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Stuffed Fresh Figs on Greens,8.95")'>
+  <span>
+     Stuffed Fresh Figs on Greens,  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Greek Pasta Salad,6.95")'>
+  <span>
+     Greek Pasta Salad,  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Curried Couscous Salad,6.95")'>
+  <span>
+     Curried Couscous Salad,  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Salade Nicoise,9.95")'>
+  <span>
+     Salade Nicoise,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Pecan Chicken Salad with Pecans,8.95")'>
+  <span>
+     Pecan Chicken Salad with Pecans,  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Curried Turkey and Pasta Salad,9.95")'>
+  <span>
+     Curried Turkey and Pasta Salad,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Steak Salad with Blue Cheese and Walnuts,10.95")'>
+  <span>
+     Steak Salad with Blue Cheese and Walnuts,  Price/serving: $10.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Japanese Noodle Salad,8.95")'>
+  <span>
+     Japanese Noodle Salad,  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Tabouli,3.95")'>
+  <span>
+     Tabouli,  Price/serving: $3.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Beet-Blood Orange Salad,5.95")'>
+  <span>
+     Beet-Blood Orange Salad,  Price/serving: $5.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Green Salads</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Spinach Salad with Cranberries and Walnuts,6.95")'>
+  <span>
+     Spinach Salad with Cranberries and Walnuts,  Price/serving: $6.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Fresh Herbs Salad,7.95")'>
+  <span>
+     Fresh Herbs Salad,  Price/serving: $7.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Asian Pear and Watercress Salad,8.95")'>
+  <span>
+     Asian Pear and Watercress Salad,  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Baby Bleu Salad with Spiced Pecans,8.95")'>
+  <span>
+     Baby Bleu Salad with Spiced Pecans,  Price/serving: $8.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Spinach Salad with Warm Bacon Dressing,7.95")'>
+  <span>
+     Spinach Salad with Warm Bacon Dressing,  Price/serving: $7.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Spinach Salad with Strawberries and Almonds,9.95")'>
+  <span>
+     Spinach Salad with Strawberries and Almonds,  Price/serving: $9.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Greek Cucumber and Tomato Salad,7.95")'>
+  <span>
+     Greek Cucumber and Tomato Salad,  Price/serving: $7.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Cole Slaw,6.95")'>
+  <span>
+     Cole Slaw,  Price/serving: $6.95
+  </span>
+</li>
+
+</ul><br>
+
+</ul></div></tab>
+
+<tab heading="Sides"><div class="page"><ul>
+
+
+<br><b>Vegetables</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Asian Vegetable Medley,4.95")'>
+  <span>
+     Asian Vegetable Medley,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Potatoes Au Gratin,4.95")'>
+  <span>
+     Potatoes Au Gratin,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Baked Stuffed Squash,3.95")'>
+  <span>
+     Baked Stuffed Squash,  Price/serving: $3.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item(""Zucchini  Yellow Squash and Roasted Tomato Medley",3.95")'>
+  <span>
+     "Zucchini  Yellow Squash and Roasted Tomato Medley",  Price/serving: $3.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Tuscan Green Beans,3.95")'>
+  <span>
+     Tuscan Green Beans,  Price/serving: $3.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Stuffed Baby New Reds,3.95")'>
+  <span>
+     Stuffed Baby New Reds,  Price/serving: $3.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Greens with Orange and Ginger,3.95")'>
+  <span>
+     Greens with Orange and Ginger,  Price/serving: $3.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Southern Wilted Greens,3.95")'>
+  <span>
+     Southern Wilted Greens,  Price/serving: $3.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Corn Cheese Boats,3.95")'>
+  <span>
+     Corn Cheese Boats,  Price/serving: $3.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Baked Bok Choy with Chevre Cheese,4.95")'>
+  <span>
+     Baked Bok Choy with Chevre Cheese,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Wild Mushrooms and Bleu Cheese Bread Pudding,4.95")'>
+  <span>
+     Wild Mushrooms and Bleu Cheese Bread Pudding,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Eggplant Stacks,4.95")'>
+  <span>
+     Eggplant Stacks,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Mediterranean Risotto Cakes,4.95")'>
+  <span>
+     Mediterranean Risotto Cakes,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Roasted Asparagus and Portobello Mushrooms,4.95")'>
+  <span>
+     Roasted Asparagus and Portobello Mushrooms,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Roasted Herbed Carrots,4.95")'>
+  <span>
+     Roasted Herbed Carrots,  Price/serving: $4.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Pasta Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Pasta Al Fresca,4.95")'>
+  <span>
+     Pasta Al Fresca,  Price/serving: $4.95
+  </span>
+</li>
+
+</ul><br>
+
+</ul></div></tab>
+
+<tab heading="Soups"><div class="page"><ul>
+
+
+<br><b>Beef Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Rustic Beef Stew,5.95")'>
+  <span>
+     Rustic Beef Stew,  Price/serving: $5.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Chicken Items</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Chicken Tortilla Soup,5.95")'>
+  <span>
+     Chicken Tortilla Soup,  Price/serving: $5.95
+  </span>
+</li>
+
+</ul><br>
+
+
+<br><b>Vegetarian</b>
+<ul class="unstyled">
+<li>
+  <input type='checkbox' ng-click='select_item("Chilled Sorrel Soup,4.95")'>
+  <span>
+     Chilled Sorrel Soup,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Wild Mushroom Soup,5.95")'>
+  <span>
+     Wild Mushroom Soup,  Price/serving: $5.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Curry Pumpkin Soup,4.95")'>
+  <span>
+     Curry Pumpkin Soup,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Cumin Carrot Soup,4.95")'>
+  <span>
+     Cumin Carrot Soup,  Price/serving: $4.95
+  </span>
+</li>
+
+<li>
+  <input type='checkbox' ng-click='select_item("Cuban Black Bean Soup,4.95")'>
+  <span>
+     Cuban Black Bean Soup,  Price/serving: $4.95
+  </span>
+</li>
+
+</ul><br>
+
+</ul></div></tab>
+
+</tabset>
+
+<pre>Selected items:
+{{selection}}</pre>
+
+</div>
