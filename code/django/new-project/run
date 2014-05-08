@@ -1,0 +1,5 @@
+#!/bin/bash
+# Run the code to demo this project
+
+django-admin.py startproject project
+find
