@@ -1,0 +1,10 @@
+* Shell Tricks *                                       -*-muse-*-
+
+Understanding a new technology involves learning new tricks
+
+[[show]]      List a command 
+[[mkexe]]     Make a new command
+[[search]]    Search my source code
+[[src]]       List my source code
+[[project]]   Switch to a new project
+[[cptree]]    Copy a file tree

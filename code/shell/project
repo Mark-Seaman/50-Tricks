@@ -1,0 +1,33 @@
+#!/bin/bash
+# Default project for Documents
+
+export p=$HOME/Documents
+
+export ph=markseaman.org
+export pa=$p
+export pb=$p/bin
+export pd=$p/Brain
+export pt=$p/test
+
+alias proot="cd $p"
+alias papp="cd $pa"
+alias pbin="cd $pb"
+alias pdoc="cd $pd"
+alias ptest="cd $pt"
+alias tres="tresults"
+
+# Show the banner
+reset
+figlet `hostname`
+cd
+ls
+
+# Regular Path
+export PATH=\
+$pb:\
+$pt:\
+/usr/bin:\
+/sbin:\
+/bin:\
+~/bin:\
+.

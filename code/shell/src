@@ -1,0 +1,7 @@
+#!/bin/bash
+# List the source code files
+
+find $pb
+find $ps
+find $pa -name '*.py'
+find $pt -name '*.tst'
