@@ -1,12 +1,11 @@
 #!/usr/bin/python
-# Run an app using execfile
+# Run an app using system
 
-execfile('exec.py')
+from os import system
 
-import os
-# Control is given away
-#os.execvp('gedit', [ 'abc.txt' ])
+print 'Control is given away, and app blocks'
 
 # This script blocks until gedit exits
-os.system('gedit')
+system('gedit')
+
 print 'Gedit has exited'

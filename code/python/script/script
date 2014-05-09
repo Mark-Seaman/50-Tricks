@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+# Run a python program as a shell script
+
+print 'Run a python program as a shell script'
+print 'Set the following line as the first line in the file'
+print '#!/usr/bin/env python'

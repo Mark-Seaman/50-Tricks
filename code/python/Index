@@ -1,0 +1,20 @@
+* Python Tricks *                                       -*-muse-*-
+
+Teaching an old dog Python
+
+_____________________________________________________________________________
+
+
+[[output/print.py][output]]          Print output from a script
+
+[[script/script][script]]          Shell command written in Python
+
+[[py-bash/psh][psh]]             Execute shell script from python code
+
+[[py-bash/pex][pex]]             Execute python code from shell
+
+[[execfile/run.py][run]]             Execute a long running app (using system)
+
+[[execfile/run-background.py][run-background]]  Execute a long running app (using execvp)
+
+[[execfile/run-exec.py][run-exec]]        Execute a long running app (using execfile)

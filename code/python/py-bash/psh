@@ -1,7 +1,7 @@
 #!/usr/bin/python
 # Print execute the input as a shell command script
 
-# Example usage:  echo hostname|psh
+# Example usage:  echo 'hostname; ls'|psh
 
 from sys import stdin
 from os  import system
