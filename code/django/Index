@@ -4,6 +4,14 @@ Teaching an old dog Django
 
 _____________________________________________________________________________
 
-[[new-project]]     Create a new project
-[[hello-world]]     Simplest possible web app
-[[objects]]         Object Relational Mapping (objects & database)
+[[new-project]]         Create a new project
+
+[[hello-world]]         Simplest possible web app
+
+[[objects]]             Object Relational Mapping (objects & database)
+
+[[template-view]]       Template Views (with no data)
+
+[[class-based-views]]   Class-based Generic Views (with data models)
+
+[[rest]]                Django Rest Framework
