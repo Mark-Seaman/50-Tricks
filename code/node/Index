@@ -17,3 +17,7 @@ _____________________________________________________________________________
 
 [[command]]         Execute shell commands from NodeJS app
 
+[[redis]]           Key-value storage
+
+[[web-service]]     Web service to get redis vars
+
