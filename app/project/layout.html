@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <!--
+        <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        -->
+    <link href="/static/bootstrap-combined.min.css" rel="stylesheet">
+    <link  href="/static/project.css" rel="stylesheet" />
+    <script src="/static/project.js"></script>
+  </head>
+  <body>    
+    {% block user %} {% endblock %}
+    
+    {% block banner %}
+    <div class='header'>
+      {% block navbar %} {% endblock %}
+    </div>
+    {% endblock %}
+    
+    <div class='page'>
+        {% block content %} {% endblock %}
+    </div>
+
+  </body>
+</html>

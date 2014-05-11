@@ -15,8 +15,8 @@ differently.
 
 **Building Topics App**
 
- * App startup
- * Twitter Bootstrap
+ * [[Step1][App startup]]
+ * [[Step2][Twitter Bootstrap]]
  * Template Inheritance
  * Links to routes
  * User model
