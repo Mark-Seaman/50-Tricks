@@ -1,0 +1,47 @@
+* Topics App *                                       -*-muse-*-
+
+Almost everyone would like to have their own custom application for threaded discussions.
+
+The Topics App will teach you how to build your own app from scratch.
+
+Each step is captured in source code.  It is built up piece by piece.  You can see each
+set of changes required to get to the next step.  
+
+You can skip to the end and have your own running application.  Or you can go through
+every step one at a time.
+
+You can skip any steps that you don't care about and modify anything that you want to do
+differently.
+
+**Building Topics App**
+
+ * App startup
+ * Twitter Bootstrap
+ * Template Inheritance
+ * Links to routes
+ * User model
+ * Saving passwords
+ * Authentication
+ * Register new user
+ * Login form
+ * Logout form
+ * User avatars
+ * Edit profile
+ * Add topic
+ * List topics
+ * Dates
+ * Topic detail
+ * Topic edit
+ * Add comment
+ * Edit comment
+ * Comment moderation
+ * Pagination
+ * Email notifications
+ * Import Topics
+ * Export Topics
+ * Scripting
+ * Django tests
+ * Unit tests
+ * Page tests
+ * System tests
+ * Deploy to production

@@ -1,0 +1,11 @@
+#!/bin/bash
+# Create a new Django application
+
+# Create the code for a new project
+django-admin.py startproject project
+find
+
+# Build a new app
+cd project
+python manage.py startapp app
+find

@@ -76,10 +76,10 @@ test
     system
 
 apps
+    Topics      user, group, topic, comment
     Notes       user, notebook, note
     Task        user, client, project, task
     Slides      user, presentation
     Book        user, book, section, chapter, doc
     Impact      user, kudo, award, idea
     Event       user, client, event, menu
-
