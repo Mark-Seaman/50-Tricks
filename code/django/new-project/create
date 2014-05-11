@@ -1,0 +1,8 @@
+#!/bin/bash
+# Create the code for a new project
+
+django-admin.py startproject project
+find
+
+cd project
+manage.py syncdb

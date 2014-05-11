@@ -1,17 +1,85 @@
 * Django Tricks *                                       -*-muse-*-
 
 Teaching an old dog Django
-
 _____________________________________________________________________________
+
+**Automation**
 
 [[new-project]]         Create a new project
 
 [[hello-world]]         Simplest possible web app
 
-[[objects]]             Object Relational Mapping (objects & database)
+[[model-objects]]       Object Relational Mapping (objects & database)
 
-[[template-view]]       Template Views (with no data)
 
-[[class-based-views]]   Class-based Generic Views (with data models)
+**View**
+
+[[view-template]]       Template Views (with no data)
+
+[[view-class]]          Class-based Generic Views (with data models)
+
+
+**Restful Web Services**
 
 [[rest]]                Django Rest Framework
+
+
+
+**New Tricks to create**
+
+The following content needs to be created.  Each trick illustrates some programming idiom
+or coding pattern.  It will act as a starting point for your project.
+
+
+automation
+
+    class generator (view, template, query)
+    scriptor
+    page list
+    exec shell
+
+views
+
+    function
+    class
+    user
+    form post
+    jade
+
+models
+    
+    basic
+    query
+    foreign key
+    redis
+    
+routing
+    
+    basic
+    request
+    parms
+    test
+
+templates
+    basic
+    template
+    vars
+    bootstap
+    angularJS
+    
+test
+    django
+    production
+    scripts
+    selenium
+    nose
+    system
+
+apps
+    Notes       user, notebook, note
+    Task        user, client, project, task
+    Slides      user, presentation
+    Book        user, book, section, chapter, doc
+    Impact      user, kudo, award, idea
+    Event       user, client, event, menu
+
