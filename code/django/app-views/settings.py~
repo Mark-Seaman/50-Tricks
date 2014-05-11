@@ -2,7 +2,6 @@
 
 from os.path import abspath,dirname,join
 
-DEBUG=True
 
 # App startup
 SECRET_KEY = 's!qs5!9(bhkv7#hn#172zm_*l#m)j(8lv1gj)#84p$9+^&amp;bn9e'
