@@ -68,7 +68,9 @@ bin/var-read
 bin/var-save
 bin/var-set
 bin/var-write
+bin/w
 bin/welcome
+test/code.tst
 test/content.tst
 test/docs.tst
 test/files.tst

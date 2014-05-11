@@ -64,6 +64,7 @@ var-read
 var-save
 var-set
 var-write
+w
 welcome
 
 /home/seaman/Projects/tricks/code:
@@ -76,6 +77,7 @@ test
 
 /home/seaman/Projects/tricks/doc:
 Domains
+Index
 MyBook
 Public
 test
@@ -92,6 +94,8 @@ man
 user
 
 /home/seaman/Projects/tricks/test:
+code.correct
+code.tst
 content.correct
 content.tst
 docs.correct
