@@ -1,0 +1,55 @@
+* Step 1 - App Startup *                           -*-muse-*-
+
+
+**Steps**
+
+Make the top directory for your application.
+
+   cd myAppName
+
+
+Create the application framework using the following shell command.
+
+   ./create myAppName
+
+
+Modify urls.py
+
+[[PRE
+    from django.conf.urls import patterns, include, url
+    from django.http import HttpResponse
+    
+    def hello(request):
+        return HttpResponse('<h1>Hello There</h1><a href="/">About</a>')
+    
+    urlpatterns = patterns('',  
+        url(r'^$', hello),
+    )
+]]
+
+Run the production server to verify the setup.
+
+    ./run
+
+
+**Discussion**
+
+Django provides two scripts that make it easy to get started on a new project.  To start a
+new project structure do:
+
+    django-admin.py startproject project
+
+Now define an app (containing related Django models).  To build a new app within the project:
+
+    python manage.py startapp app
+
+
+**Improvements**
+
+You might want to select the name of the project and app to create.  The create script is
+hard-coded to 'project' and 'app'.
+
+
+**To Do**
+
+ * Build args into create and run.

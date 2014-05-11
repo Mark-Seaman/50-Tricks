@@ -1,0 +1,30 @@
+#!/usr/bin/env python
+# Create a document
+
+from sys import argv
+from os import environ
+from os.path import join, exists
+
+
+# Print a nice header
+def print_head(text):
+    print ('_' * 50)
+    print '\n'+text+'                                    -*-muse-*-'
+    print ('_' * 50) + '\n'
+    
+
+# Setup the file name
+doc=argv[1]
+f=join(environ['p'],'app','doc',doc)
+
+
+# Create file if needed
+if exists(f):
+    print_head ('Document exists, %s' % doc)
+    print open(f).read()
+else:
+    print_head ('Create a document, %s' % doc)
+    open(f,'w').write('* %s *'%f)
+
+
+
