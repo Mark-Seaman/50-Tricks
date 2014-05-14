@@ -56,6 +56,7 @@ rmas
 search
 show
 src
+src-jack
 te
 tfail
 tfix
@@ -111,6 +112,7 @@ git.correct
 git.tst
 projects.correct
 projects.tst
+python.tst
 src.correct
 src.tst
 tablerw.correct

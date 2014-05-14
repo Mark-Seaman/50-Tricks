@@ -34,6 +34,7 @@ bin/rmas
 bin/search
 bin/show
 bin/src
+bin/src-jack
 bin/tdiff
 bin/te
 bin/tfail
@@ -80,6 +81,7 @@ test/docs.tst
 test/files.tst
 test/git.tst
 test/projects.tst
+test/python.tst
 test/src.tst
 test/update.tst
 test/vars.tst
