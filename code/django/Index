@@ -7,7 +7,7 @@ _____________________________________________________________________________
 
 [[new-project]]         Create a new project
 
-[[hello-world]]         Simplest possible web app
+[[app-hello]]           Simplest possible web app
 
 [[model-objects]]       Object Relational Mapping (objects & database)
 
@@ -23,6 +23,13 @@ _____________________________________________________________________________
 
 [[rest]]                Django Rest Framework
 
+
+**Tutorial Application**
+
+[[tutorial-app]]        Show how to build a complete app in steps
+
+
+_____________________________________________________________________________
 
 
 **New Tricks to create**

@@ -22,6 +22,7 @@ differently.
  * User model
  * Saving passwords
  * Authentication
+ * Admin
  * Register new user
  * Login form
  * Logout form
@@ -45,3 +46,8 @@ differently.
  * Page tests
  * System tests
  * Deploy to production
+
+
+**Documents**
+
+    [[.][Documents Directory]]

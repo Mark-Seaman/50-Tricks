@@ -23,10 +23,10 @@ class ContactList(ListView):
 class MyContactList(ListView):
 
     template_name = 'contact_list.html'
-    queryset = Contact.objects.filter(name__startswith='Contact ')
+    #queryset = Contact.objects.filter(name__startswith='Contact ')
 
-    #def get_queryset(self):
-    #    return Contact.objects.filter(user=self.request.user)
+    def get_queryset(self):
+        return Contact.objects.all()   #filter(user=self.request.user)
 
 
 #-----------------------------------------------------------------------------
