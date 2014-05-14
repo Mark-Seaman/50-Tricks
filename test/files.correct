@@ -7,7 +7,6 @@ Git libpeerconnection files
 /home/seaman/Projects/tricks:
 app
 bin
-code
 doc
 env
 logs
@@ -64,6 +63,7 @@ tlist
 tnew
 todo
 tresults
+tricks-publish
 trun
 tshow
 tst
@@ -78,19 +78,15 @@ var-write
 w
 welcome
 
-/home/seaman/Projects/tricks/code:
+/home/seaman/Projects/tricks/doc:
 angular
 django
-node
-python
-shell
-test
-
-/home/seaman/Projects/tricks/doc:
 Domains
 Index
 MyBook
-Public
+node
+python
+shell
 Step1
 test
 vars-data
