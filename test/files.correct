@@ -121,7 +121,6 @@ projects.tst
 src.correct
 src.tst
 tablerw.correct
-tablerw.tst
 update.correct
 update.tst
 vars.correct
