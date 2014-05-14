@@ -45,6 +45,7 @@ bin/tnew
 bin/todo
 bin/tout
 bin/tresults
+bin/tricks-publish
 bin/trun
 bin/tshow
 bin/tst

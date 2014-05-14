@@ -1016,7 +1016,6 @@
 ./django/wingIDE/hello.py
 ./django/wingIDE/tool.wpr
 ./django/wingIDE/tool.wpu
-./Domains
 ./Index
 ./MyBook
 ./node
@@ -1850,7 +1849,6 @@
 ./shell/search
 ./shell/show
 ./shell/src
-./Step1
 ./test
 ./test/Index
 ./test/tcorrect

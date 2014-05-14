@@ -87,6 +87,6 @@ page-get localhost:8052 test TestIndex
 
 
 # Clean up after test
+rm $pd/Domains
 rm $pd/Public/test/*
 rm -rf $pd/Public
-
