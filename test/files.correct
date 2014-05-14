@@ -87,7 +87,6 @@ node
 python
 shell
 test
-vars-data
 
 /home/seaman/Projects/tricks/env:
 bin

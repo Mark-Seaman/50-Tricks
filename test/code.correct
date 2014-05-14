@@ -514,7 +514,6 @@ Projects/tricks/doc/angular/js
 Projects/tricks/doc/angular/js/bootstrap.min.js
 Projects/tricks/doc/angular/js/angular.min.js
 Projects/tricks/doc/angular/js/underscore-min.js
-Projects/tricks/doc/Domains
 Projects/tricks/doc/Index
 Projects/tricks/doc/shell
 Projects/tricks/doc/shell/show
@@ -941,7 +940,6 @@ Projects/tricks/doc/django/rest/tutorial/tutorial.db
 Projects/tricks/doc/django/rest/tutorial/run
 Projects/tricks/doc/django/rest/setup-app
 Projects/tricks/doc/django/routing
-Projects/tricks/doc/vars-data
 Projects/tricks/doc/python
 Projects/tricks/doc/python/pycharm
 Projects/tricks/doc/python/pycharm/djproject
