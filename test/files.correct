@@ -112,6 +112,7 @@ git.correct
 git.tst
 projects.correct
 projects.tst
+python.correct
 python.tst
 src.correct
 src.tst

@@ -32,5 +32,5 @@ var-get scan_pipeID
 var-set scan_pipeID 42
 var-list | grep pipeID
 
-rm $pd/vars-data
+rm -f $pd/vars-data
 
