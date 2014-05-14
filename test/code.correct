@@ -541,6 +541,8 @@ Projects/tricks/code/django/app-views/settings.pyc
 Projects/tricks/code/django/app-views/wsgi.py
 Projects/tricks/code/django/app-views/run
 Projects/tricks/code/django/data
+Projects/tricks/code/django/tutorial-app
+Projects/tricks/code/django/tutorial-app/Index
 Projects/tricks/code/django/wingIDE
 Projects/tricks/code/django/wingIDE/tool.wpu
 Projects/tricks/code/django/wingIDE/tool.wpr
@@ -934,6 +936,7 @@ Projects/tricks/code/django/rest/tutorial/quickstart/serializers.py
 Projects/tricks/code/django/rest/tutorial/quickstart/__init__.pyc
 Projects/tricks/code/django/rest/tutorial/quickstart/views.pyc
 Projects/tricks/code/django/rest/tutorial/tutorial.db
+Projects/tricks/code/django/rest/tutorial/run
 Projects/tricks/code/django/rest/setup-app
 Projects/tricks/code/django/routing
 Projects/tricks/code/python

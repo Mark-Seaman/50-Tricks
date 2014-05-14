@@ -5,6 +5,7 @@
 ./Public
 ./Public/test
 ./Public/TestIndex
+./Step1
 ./test
 ./test/TestIndex
 ./test/TestPrivateDoc1

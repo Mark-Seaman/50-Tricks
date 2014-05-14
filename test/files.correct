@@ -5,6 +5,7 @@ Git libpeerconnection files
 /home/seaman/Projects/tricks/README.md
 
 /home/seaman/Projects/tricks:
+app
 bin
 code
 doc
@@ -14,11 +15,19 @@ profile
 README.md
 test
 
+/home/seaman/Projects/tricks/app:
+bin
+create
+doc
+project
+run
+
 /home/seaman/Projects/tricks/bin:
 cache
 commit
 create
 doc-diff-all
+doc-edit
 doc-get
 doc-pull
 doc-push
@@ -30,6 +39,8 @@ elapsed
 filter-path
 install.pip
 lc
+mkdoc
+mkdocapp
 mkexe
 page
 page-get
@@ -80,6 +91,7 @@ Domains
 Index
 MyBook
 Public
+Step1
 test
 vars-data
 

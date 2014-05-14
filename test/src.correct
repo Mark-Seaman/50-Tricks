@@ -3,6 +3,7 @@ bin/commit
 bin/create
 bin/doc-diff
 bin/doc-diff-all
+bin/doc-edit
 bin/doc-get
 bin/doc-pull
 bin/doc-push
@@ -14,6 +15,8 @@ bin/elapsed
 bin/filter-path
 bin/install.pip
 bin/lc
+bin/mkdoc
+bin/mkdocapp
 bin/mkexe
 bin/page
 bin/page-diff
