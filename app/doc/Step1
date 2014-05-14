@@ -14,8 +14,9 @@ Create the application framework using the following shell command.
 
 
 Modify urls.py
-
 [[PRE
+    # urls.py
+
     from django.conf.urls import patterns, include, url
     from django.http import HttpResponse
     
@@ -30,6 +31,8 @@ Modify urls.py
 Run the production server to verify the setup.
 
     ./run
+
+Visit the [[../project][code]]
 
 
 **Discussion**

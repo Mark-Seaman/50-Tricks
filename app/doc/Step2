@@ -3,17 +3,42 @@
 
 **Steps**
 
+Run the application code to see the home page. 
+
+  $ cd project
+  $ ./run
+
+
+Modify settings.py
+
+[[PRE
+]]
+
 Modify urls.py
 
 [[PRE
 ]]
 
 
+
 **Discussion**
 
+This step demonstrates how to create a page that is styled by Twitter Bootstrap.  It also
+loads Angular JS which allows front-end logic to be included in every web page.
+
+A project specific stylesheet and JS library lets you style the application to suit your
+needs.
 
 
 **Improvements**
+
+You may want to change the structure of your home page.  Edit project/templates/home.html
+file to do that.
+
+Edit project/app/urls.py file to add more pages to your site.
+
+To change the appearance of your site edit project/static/thumper.css.
+
 
 
 **To Do**
