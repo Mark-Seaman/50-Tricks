@@ -3,6 +3,6 @@
 
 f=$pd/vars-data
 
-rm $f    
+rm -f $f    
 touch $f
 
