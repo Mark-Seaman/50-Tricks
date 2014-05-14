@@ -20,12 +20,36 @@ Modify urls.py
     from django.conf.urls import patterns, include, url
     from django.http import HttpResponse
     
+    # View function
     def hello(request):
         return HttpResponse('<h1>Hello There</h1><a href="/">About</a>')
     
+    # Routes to views
     urlpatterns = patterns('',  
         url(r'^$', hello),
     )
+]]
+
+
+Modify settings.py
+[[PRE
+# settings.py
+# Application settings required
+
+DEBUG=True
+
+
+# App startup
+SECRET_KEY = 's!qs5!9(bhkv7#hn#172zm_*l#m)j(8lv1gj)#84p$9+^&amp;bn9e'
+
+
+# Location of router
+ROOT_URLCONF = 'project.urls'
+
+
+# Shim to run application from Apache
+WSGI_APPLICATION = 'project.wsgi.application'
+
 ]]
 
 Run the production server to verify the setup.

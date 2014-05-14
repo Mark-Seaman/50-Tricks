@@ -1,0 +1,6 @@
+#!/bin/bash
+# Publish these tricks using MyBookOnline
+
+cptree ~/Projects/tricks/code ~/Documents/MyBook/Public/50-Tricks
+
+
