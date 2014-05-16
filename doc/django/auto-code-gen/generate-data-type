@@ -1,0 +1,49 @@
+#!/usr/bin/env python
+# Create the source code for a Django data type
+
+from os.path import join,exists
+from os import chdir,environ,listdir
+from sys import argv
+
+
+# Find the names of all templates
+def template_files():
+    templates = [ 'dt', 'view_dt', 'test_dt', 'urls_dt' ]
+    return [ f for f in  listdir('.') if f[:-3] in templates ]
+           
+
+# Convert source file
+def convert_source(text, data_type, data_type_cap):
+    text = text.replace('data_type',data_type)
+    text = text.replace('Data_Type',data_type_cap)
+    return text
+
+
+# Create source file
+def create_source_file(f, data_type, data_type_cap):
+    print '----------------------------------------'
+    print 'Create ',f
+    print '----------------------------------------'
+    if exists(f):
+        text = open(f).read()
+    text = convert_source(text, data_type, data_type_cap)
+    #print text
+    new_file = f.replace('dt',data_type)
+    f=open(new_file, 'w')
+    f.write(text)
+    f.close()
+
+# Build all of the source code files
+def build_source_files(data_type,data_type_cap):
+    print "Create the source code for a Django data type"
+    files =  template_files() 
+    for f in files:
+        create_source_file(f, data_type,data_type_cap)
+
+
+if len(argv)<2:
+    print 'example usage: '+argv[0]+' EventMenu'
+else:
+    data_type_cap = argv[1]
+    data_type     = data_type_cap.lower()
+    build_source_files(data_type,data_type_cap)
