@@ -1,15 +1,9 @@
 #!/bin/bash
 # Run the code to demo this project
 
-# Create the basic app shell
-django-admin.py startproject project
-find
-
-# Project directory
-cd project
-
-# Create the object app
-manage.py startapp contact
+# Kill the old server
+x=`ps -ef | grep -v grep | grep runserver | awk '{ print $2 }'`
+[ ! -z "$x" ] && echo kill $x && kill $x
 
 # Run the server and display the page
 manage.py runserver
