@@ -16,6 +16,8 @@
       Phone: {{ contact.phone }}
     </p>
 
+
+    {% if name_list %}
     <p>
       Aliases:
     </p>
@@ -24,4 +26,6 @@
             <li>{{ name }}</li>
         {% endfor %}      
     </ul>
+    {% endif %}
+
 {% endblock %}
