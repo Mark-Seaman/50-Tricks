@@ -3,35 +3,35 @@ Test all of the event catering code
 """
 
 from django.test import TestCase
-from eventmenu import *
+from accountspayable import *
 
-class EventMenuTest(TestCase):
+class AccountsPayableTest(TestCase):
 
-    def test_eventmenu(self):
+    def test_accountspayable(self):
         """
-        Test the eventmenu data type
+        Test the accountspayable data type
         """
 
         # Setup test records with 10 new records
-        test_eventmenu()
-        self.assertEqual(10,len(EventMenu.objects.filter(name__startswith='Name ')))
-        self.assertEqual(10,len(EventMenu.objects.all()))
+        test_accountspayable()
+        self.assertEqual(10,len(AccountsPayable.objects.filter(name__startswith='Name ')))
+        self.assertEqual(10,len(AccountsPayable.objects.all()))
 
         # Convert to string 
-        a = eventmenu_get(3)
-        s = eventmenu_detail(a)
-        answer = [3, u'Name 3', u'EventMenu 3', u'', u'City 3', u'State 3', u'Zip 3', u'Phone 3',
+        a = accountspayable_get(3)
+        s = accountspayable_detail(a)
+        answer = [3, u'Name 3', u'AccountsPayable 3', u'', u'City 3', u'State 3', u'Zip 3', u'Phone 3',
                   0.0, u'Email 3', u'']
         self.assertEqual(s,answer)
 
         # Show the labels for a table
-        s = eventmenu_labels
-        answer =  [ 'id', 'name', 'eventmenu1', 'eventmenu2', 'city', 'state', 'zipcode', 'phone', 
+        s = accountspayable_labels
+        answer =  [ 'id', 'name', 'accountspayable1', 'accountspayable2', 'city', 'state', 'zipcode', 'phone', 
                     'tax_rate', 'email', 'notes',]
         self.assertEqual(s,answer)
 
         # Show the list for the details 
-        s = eventmenues()
+        s = accountspayablees()
         answer =  [[1, u'Name 1', u'Phone 1'], [2, u'Name 2', u'Phone 2'], 
                    [3, u'Name 3', u'Phone 3'], [4, u'Name 4', u'Phone 4'], 
                    [5, u'Name 5', u'Phone 5'], [6, u'Name 6', u'Phone 6'], 

@@ -2,14 +2,15 @@
 # Create the source code for a Django data type
 
 from os.path import join,exists
-from os import chdir,environ,listdir
+from os import chdir,environ,listdir,mkdir
 from sys import argv
 
 
 # Find the names of all templates
 def template_files():
-    templates = [ 'dt', 'view_dt', 'test_dt', 'urls_dt' ]
-    return [ f for f in  listdir('.') if f[:-3] in templates ]
+    templates = [ 'dt.py', 'dt_views.py', 'dt_tests.py', 'dt_urls.py',
+                  'dt.html', 'dt_list.html', 'dt_detail.html', 'dt_edit.html']
+    return [ f for f in  listdir('snippets') if f in templates ]
            
 
 # Convert source file
@@ -19,31 +20,46 @@ def convert_source(text, data_type, data_type_cap):
     return text
 
 
+# Print the source code
+def show_code(path, text):
+    show = False
+    if show:
+        print '----------------------------------------'
+        print '    ',path
+        print '----------------------------------------'
+        print text
+    else:
+        print '    ',path
+
+
 # Create source file
 def create_source_file(f, data_type, data_type_cap):
-    print '----------------------------------------'
-    print 'Create ',f
-    print '----------------------------------------'
-    if exists(f):
-        text = open(f).read()
-    text = convert_source(text, data_type, data_type_cap)
-    #print text
-    new_file = f.replace('dt',data_type)
-    f=open(new_file, 'w')
-    f.write(text)
-    f.close()
+    path = join('snippets',f)
+    if not exists('code'):
+        mkdir('code')
+    code = join('code',f.replace('dt',data_type))
+    if exists(path):
+        text = open(path).read()
+        f=open(code, 'w')
+        text = convert_source(text, data_type, data_type_cap)
+        f.write(text)
+        f.close()
+        show_code(code, text)
+    else:
+        print 'No snippet found, ', path
+
 
 # Build all of the source code files
 def build_source_files(data_type,data_type_cap):
-    print "Create the source code for a Django data type"
     files =  template_files() 
     for f in files:
         create_source_file(f, data_type,data_type_cap)
 
+print 'SNIP:',listdir('snippets'), template_files()
 
+# You must supply a class name
 if len(argv)<2:
     print 'example usage: '+argv[0]+' EventMenu'
 else:
-    data_type_cap = argv[1]
-    data_type     = data_type_cap.lower()
-    build_source_files(data_type,data_type_cap)
+    print "Create the source code for a Django data type, ", argv[1]
+    build_source_files(argv[1].lower(),argv[1])

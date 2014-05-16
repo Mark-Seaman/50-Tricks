@@ -1,0 +1,31 @@
+{% block content %}
+    <h2>Contact Detail {{ contact.pk }}</h2>
+    <p>
+      <a href="/contacts/">contacts</a>
+      <a href="/contacts/{{ contact.pk }}/edit">edit</a>
+      <a href="/contacts/{{ contact.pk }}/delete">delete</a>
+    </p>
+
+    <p>
+      Name: {{ contact.name }}
+    </p>
+    <p>
+      Address: {{ contact.address }}
+    </p>
+    <p>
+      Phone: {{ contact.phone }}
+    </p>
+
+
+    {% if name_list %}
+    <p>
+      Aliases:
+    </p>
+    <ul>
+        {% for name in name_list %}
+            <li>{{ name }}</li>
+        {% endfor %}      
+    </ul>
+    {% endif %}
+
+{% endblock %}

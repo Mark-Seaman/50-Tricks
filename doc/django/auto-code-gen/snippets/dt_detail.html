@@ -1,0 +1,31 @@
+{% block content %}
+    <h2>Contact Detail {{ data_type.pk }}</h2>
+    <p>
+      <a href="/data_types/">data_types</a>
+      <a href="/data_types/{{ data_type.pk }}/edit">edit</a>
+      <a href="/data_types/{{ data_type.pk }}/delete">delete</a>
+    </p>
+
+    <p>
+      Name: {{ data_type.name }}
+    </p>
+    <p>
+      Address: {{ data_type.address }}
+    </p>
+    <p>
+      Phone: {{ data_type.phone }}
+    </p>
+
+
+    {% if name_list %}
+    <p>
+      Aliases:
+    </p>
+    <ul>
+        {% for name in name_list %}
+            <li>{{ name }}</li>
+        {% endfor %}      
+    </ul>
+    {% endif %}
+
+{% endblock %}
