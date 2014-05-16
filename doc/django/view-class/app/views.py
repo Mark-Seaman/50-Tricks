@@ -1,5 +1,17 @@
 # views.py
 
+# Direct HTML from view
+
+# Template View -- class based view using a fixed template
+# View from model -- class based view 
+# Extra content in view
+# Viewing subsets of objects
+# Dynamic filtering
+# Doing extra work
+# Basic form editing
+# Model forms
+# Adding user info
+
 from django.views.generic import ListView, DetailView
 from django.shortcuts import get_object_or_404
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
@@ -34,6 +46,11 @@ class MyContactList(ListView):
 
 # Basic detail view
 class ContactDetail(DetailView):
+    model = Contact
+    template_name = 'contact_detail.html'
+
+# Specialized detail view
+class MyContactDetail(DetailView):
     #context_object_name = 'contact'
     #queryset = Contact.objects.all()
 
@@ -43,9 +60,8 @@ class ContactDetail(DetailView):
     # Call the base implementation first to get a context
     def get_context_data(self, **kwargs):
         context = super(ContactDetail, self).get_context_data(**kwargs)
-        context['name_list'] = [ 'Mark', 'Peter', 'Bob' ]
+        #context['name_list'] = [ 'Mark', 'Peter', 'Bob' ]
         return context
-
 
 #-----------------------------------------------------------------------------
 # Edit view
@@ -70,19 +86,6 @@ class ContactUpdate(UpdateView):
 class ContactDelete(DeleteView):
     model = Contact
     success_url = reverse_lazy('contact_list')
-    template_name = 'contact_confirm_delete.html'
-
-
-###########################
-# Direct HTML from view
-# Template View -- class based view using a fixed template
-# View from model -- class based view 
-# Extra content in view
-# Viewing subsets of objects
-# Dynamic filtering
-# Doing extra work
-# Basic form editing
-# Model forms
-# Adding user info
+    template_name = 'contact_delete.html'
 
 
