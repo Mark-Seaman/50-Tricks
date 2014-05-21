@@ -1,11 +1,11 @@
 {% block content %}
-    <h2>My Contacts</h2>
-    <a href='/'>Contact Views</a>
+    <h2>My Data_Types</h2>
+    <a href='/'>Data_Type Views</a>
     <ul>
         {% for data_type in object_list %}
             <li>
               {{ data_type.name }}  
-              <a href="/data_types/{{ data_type.pk }}">{{ data_type.pk }}</a>
+              <a href="/data_type/{{ data_type.pk }}">{{ data_type.pk }}</a>
             </li>
         {% endfor %}
     </ul>

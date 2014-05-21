@@ -8,10 +8,10 @@ from sys import argv
 
 # Find the names of all templates
 def template_files():
-    templates = [ 'dt.py', 'dt_views.py', 'dt_tests.py', 'dt_urls.py',
+    templates = [ 'dt.py',   'dt_views.py',  'dt_tests.py',    'dt_urls.py',
                   'dt.html', 'dt_list.html', 'dt_detail.html', 'dt_edit.html']
     return [ f for f in  listdir('snippets') if f in templates ]
-           
+
 
 # Convert source file
 def convert_source(text, data_type, data_type_cap):
@@ -55,7 +55,6 @@ def build_source_files(data_type,data_type_cap):
     for f in files:
         create_source_file(f, data_type,data_type_cap)
 
-print 'SNIP:',listdir('snippets'), template_files()
 
 # You must supply a class name
 if len(argv)<2:

@@ -1,19 +1,12 @@
 {% block content %}
-    <h2>Contact Detail {{ data_type.pk }}</h2>
+    <h2>Data_Type Detail {{ data_type.pk }}</h2>
     <p>
-      <a href="/data_types/">data_types</a>
-      <a href="/data_types/{{ data_type.pk }}/edit">edit</a>
-      <a href="/data_types/{{ data_type.pk }}/delete">delete</a>
-    </p>
-
-    <p>
-      Name: {{ data_type.name }}
+      <a href="/data_type/">data_type</a>
+      <a href="/data_type/{{ data_type.pk }}/edit">edit</a>
+      <a href="/data_type/{{ data_type.pk }}/delete">delete</a>
     </p>
     <p>
-      Address: {{ data_type.address }}
-    </p>
-    <p>
-      Phone: {{ data_type.phone }}
+      {{ form.as_p }}
     </p>
 
 
