@@ -1,3 +1,3 @@
 
-from contact.models import test_contact_code
-test_contact_code()
+from contact.models import test_code
+test_code()
