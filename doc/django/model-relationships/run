@@ -1,0 +1,9 @@
+#!/bin/bash
+# Run the code to demo this project
+
+
+manage.py shell  <<EOF
+from contact.models import test_code
+test_code()
+EOF
+
