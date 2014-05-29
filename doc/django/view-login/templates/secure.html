@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+ 
+        <h1>Secure</h1>
+
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>          
+          <li>
+            <a href="/secure">Secure</a>
+          </li>
+          <li>
+            <a href="/no_access">No Access</a>
+          </li>
+        </ul>
+
+        <h2>Login Info</h2>
+
+        <p>logged in user: {{user}}</p>
+        <p><a href='/logout'>Logout</a></p>
+
+{% endblock %}
