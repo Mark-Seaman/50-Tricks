@@ -15,7 +15,6 @@ ROOT_DIR  = dirname(dirname(abspath(__file__)))
 STATIC_ROOT = ''
 STATIC_URL = '/static/'
 
-
 # Templates
 TEMPLATE_LOADERS = ('django.template.loaders.filesystem.Loader',)
 TEMPLATE_DIRS = (join(ROOT_DIR,'templates'),)

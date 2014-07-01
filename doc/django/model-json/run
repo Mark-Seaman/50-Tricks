@@ -1,14 +1,22 @@
 #!/bin/bash
 # Run the code to demo this project
 
+port=8050
+
+./manage.py shell  <<EOF
+from contact.models import test_code
+test_code()
+EOF
+
 # Kill the old server
 x=`ps -ef | grep -v grep | grep runserver | awk '{ print $2 }'`
 [ ! -z "$x" ] && echo kill $x && kill $x
 
 # Run the server
-rbg manage.py runserver 8085
+cd $p/app
+echo curl localhost:$port/$1
+./manage.py runserver $port
 sleep 2
 
 # Display the page
-rbg firefox localhost:8085
-curl localhost:8085/json
+rbg firefox localhost:$port/$1

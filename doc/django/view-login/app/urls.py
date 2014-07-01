@@ -22,7 +22,7 @@ urlpatterns = patterns('',
     #url(r'^secure$', 'views.secure'),
     #url(r'^no_access$', 'views.no_access'),
 
-    (r'^login', 'django.contrib.auth.views.login', {'template_name': 'login.html'}),  
+    (r'^accounts/login', 'django.contrib.auth.views.login', {'template_name': 'login.html'}),  
     #(r'^logout', 'views.logout_view'),
 
    
