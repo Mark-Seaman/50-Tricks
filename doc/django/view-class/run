@@ -6,8 +6,9 @@ x=`ps -ef | grep -v grep | grep runserver | awk '{ print $2 }'`
 [ ! -z "$x" ] && echo kill $x && kill $x
 
 # Run the server
-rbg manage.py runserver
+echo 'Starting view-class server'
+rbg manage.py runserver $port
 sleep 2
 
 # Display the page
-rbg firefox localhost:8000
+rbg firefox localhost:$port
