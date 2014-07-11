@@ -1,6 +1,9 @@
 <h1>Post contact</h1>
 
 <form action="" method="post">{% csrf_token %}
-    {{ form.as_p }}
-    <input type="submit" value="Save" />
+    Name:   <input name="name"    type="text" value="None" /> 
+    Address:<input name="address" type="text" value="None" /> 
+    Phone:  <input name="phone"   type="text" value="None" /> 
+    <button type="submit">Save</button>
+    <button type="cancel" onclick="javascript:window.location='/'">Cancel</button>
 </form>
