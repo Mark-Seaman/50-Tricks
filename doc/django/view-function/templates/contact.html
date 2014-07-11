@@ -1,0 +1,23 @@
+<h1>Demo of View Functions</h1>
+<h2>Contacts</h2>
+<p>
+  This application is a demo of the class based generic views.
+</P>
+
+<ul>
+  {% for contact in object_list %}
+  <li>
+    <a href="/contacts/{{ contact.pk }}"> {{ contact.name }}</a>
+    <a href="/contacts/{{ contact.pk }}/delete">Delete</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<p>
+  <a href='/contacts/add'>Add New Contact</a>
+</p>
+<hr>
+<p>
+  Learn more at <a href="https://docs.djangoproject.com/en/1.6/topics/class-based-views/generic-display/">
+    Django Class Based views</a>
+</p>
