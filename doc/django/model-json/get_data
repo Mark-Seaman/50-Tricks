@@ -1,0 +1,11 @@
+#!/bin/bash
+# Get the data from the server
+
+curl localhost:$port/$1
+echo
+
+curl localhost:$port/list
+echo
+
+curl localhost:$port/post
+echo
