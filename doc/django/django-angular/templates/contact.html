@@ -1,0 +1,52 @@
+<html ng-app>
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+  </head>
+
+  <body>
+
+    <h1>Contacts</h1>
+    
+    <div ng-controller='Ctrl'>
+
+      <script>
+        function Ctrl($scope,$http) {
+
+            $scope.get_page_data = function () {
+                $scope.data = 'Working'
+                $http.get('/list').success(function(data,status,headers,config) {
+                    $scope.data = data
+                })
+            }
+        
+            $scope.post_page_data = function () {
+                $http.post ('/put',$scope.data)
+                .success (function(data,status,headers,config) {
+                    $scope.data = data
+                })
+                .error (function(data,status,headers,config) { 
+                    $scope.data = 'Error: a bad thing happened' //+data 
+                }) 
+                $scope.data = 'Working'
+            }
+
+            $scope.data = 'Ready'
+        }
+      </script>
+
+      {% verbatim %}
+
+          <p><button ng-click='get_page_data()'>Get Data</button></p>
+          <p><button ng-click='post_page_data()'>Post Data</button></p>
+
+          <p>Data:</p>
+          <p>{{ data }}</p>
+
+      {% endverbatim %}
+
+      <a href='name'>Name</a>
+
+</div>
+
+</body>
+</html>

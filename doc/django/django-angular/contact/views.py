@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from contact.models import Contact
 from django.core import serializers
+from django.views.decorators.csrf import csrf_exempt
 
 
 # Render a view
@@ -16,10 +17,11 @@ def json_list(request):
     return HttpResponse('List = '+data)
 
 
-# Return a list as JSON
+# Post a JSON blob
+@csrf_exempt
 def json_post(request):
     data = request.body
     print "Body:", data
-    return HttpResponse('OK')
+    return HttpResponse('Posted: '+data)
 
 

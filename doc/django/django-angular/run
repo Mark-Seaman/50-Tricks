@@ -15,4 +15,4 @@ sleep 2
 
 # Display the page
 #get_data
-rbg firefox localhost:$port/contact
+rbg firefox localhost:$port/name

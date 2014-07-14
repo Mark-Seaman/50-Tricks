@@ -1,0 +1,49 @@
+<html ng-app>
+<head>
+
+ <!--
+        <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+        <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.4.0.js"></script>
+        <link  href="http://appthumper.com/media/thumper.css" rel="stylesheet" />
+        <script src="http://appthumper.com/media/thumper.js"></script>   
+    -->
+
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.5/angular.js"></script>
+
+</head>
+
+<body>
+
+<h1>Contacts</h2>
+
+<div class='page' ng-controller='Ctrl'>
+
+
+  <script>
+    function Ctrl($scope,$http) {
+
+        $scope.get_page_data = function () {
+            $scope.status1 = 'Working'
+            $http.get('/list').success(function(data,status,headers,config) {
+                $scope.status1 = data
+            })
+        }
+
+        $scope.status1 = 'Ready'
+    }
+  </script>
+
+  <button ng-click='get_page_data()'>Get Data</button>
+  <p ng-bind='status1'></p>
+
+  {% verbatim %}
+  <h1>Welcome {{name}}</h1>
+  <p>What is your name?</p>
+  <input type='text' ng-model='name'>
+  {% endverbatim %}
+
+</div>
+
+</body>
+</html>

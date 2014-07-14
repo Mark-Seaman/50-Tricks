@@ -1,0 +1,15 @@
+Model JSON
+
+Demonstrate the usage of the Django ORM (Object Relational Mapper).
+
+Build a data model and then create a database table to hold it.
+
+    $ e contact/models.py
+
+    $ manage.py syncdb
+
+    $ ./run
+
+This should list out the objects that are known.
+
+    $ curl  http://localhost:8085

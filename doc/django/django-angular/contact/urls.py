@@ -6,6 +6,7 @@ urlpatterns = patterns(
 
     url(r'^$',     'contact.views.hello'),
     url(r'^list$', 'contact.views.json_list'),
-    url(r'^post$', 'contact.views.json_post'),
+    url(r'^put$',  'contact.views.json_post'),
     url(r'^contact$', TemplateView.as_view(template_name='contact.html')),
+    url(r'^name$',    TemplateView.as_view(template_name='name.html')),
 )
